@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+
+  <table id="table_id" class="display">
+    <caption>Mi tabla</caption>
+    <thead>
+      <tr>
+        <th>Cabecera 1</th>
+        <th>Cabecera 2</th>
+        <th>Cabecera 3</th>
+        <th>Cabecera 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <table></table>Fila 1
+        </td>
+        <td>Fila 1</td>
+        <td>Fila 1</td>
+        <td>
+          <table>
+            <tr>
+              <td>---1----</td>
+            </tr>
+            <tr>
+              <td>----1-----</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>Fila 2</td>
+        <td>Fila 2</td>
+        <td>Fila 2</td>
+        <td>
+          <table>
+            <tr>
+              <td>---1---</td>
+            </tr>
+            <tr>
+              <td>---1---</td>
+            </tr>
+    </tbody>
+  </table>
+  </td>
+  </tr>
+  <tfoot>
+    <tr>
+      <td colspan="3">TOTAL</td>
+      <td>Fila 3</td>
+    </tr>
+  </tfoot>
+  </table>
+</body>
+
+</html>
