@@ -1,66 +1,113 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="include/css.css" rel="stylesheet" type="text/css"/>
-        <!--BootStrap css and JS-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+    <title>Cocoe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        var conmutador = 0;
+        function ver_menu() {
+            if (conmutador == 0) {
+                $("#menu_opciones").css('display', 'block');
+                conmutador = 1;
+            } else {
+                $("#menu_opciones").css('display', 'none');
+                conmutador = 0;
+            }
 
-    </head>
-    <body>
-        <header>
+        }
+    </script>
+</head>
 
-            <div id="logo">
-                <img src="images/cocoelogo.png" alt=""/>
+<body>
+    <header id="header_arriba">
+
+        <div id="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <nav id="menu_navegacion">
+            <div id="icono_menu">
+                <i class="fas fa-bars" onclick="ver_menu();"></i>
             </div>
+            <ul id="menu_opciones">
+                <li><a class="rojo" href="">New</a></li>
+                <li><a href="">Motion</a></li>
+                <li><a href="">Desing</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <nav id="menu_social">
+            <ul>
+                <li><a href=""><i class="fas fa-rss"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+        <div class="borrar"></div>
+    </header>
 
-            <nav id="menu_navegacion">
-                <ul>
-                    <li>new</li>
-                    <li>motion</li>
-                    <li>design</li>
-                    <li>blog</li>
-                    <li>about</li>
-                </ul>
-            </nav>
-            <nav id="menu_social">
-                <ul>
-                    <li><i class="fas fa-camera"></i></li>
-                    <li><i class="fas fa-camera"></i></li>
-                    <li><i class="fas fa-camera"></i></li>
-                    <li><i class="fas fa-camera"></i></li>
-                    <li><i class="fas fa-camera"></i></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
+    <section id="contenido">
+        <div id="imagen_gorda">
+            <img src="images/grande.jpg" alt="Grande">
+        </div>
+        <div id="articulos">
+            <article>
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article class="centro">
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article>
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article>
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article class="centro">
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article>
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article>
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article class="centro">
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
+            <article>
+                <a href=""><img src="images/dia.jpg" alt="Texto"></a>
+                <p>Texto Descriptivo</p>
+            </article>
 
-            <div id="imagen_gorda">
-                <img src="" alt="Imagen Gorda"></img>
-            </div>
-
-            <div id="articulos">
-                <article>
-                    <img src="" alt="Text">
-                    <p>texto</p>
-                </article>
-            </div>
             <div class="borrar"></div>
-            <nav><a href="">Siguiente</a></nav>
-        </section>
-        <footer>
-            <p>Texto</p>
-        </footer>
-    </body>
+
+            <nav id="paginacion">
+                <a href="">Siguiente</a>
+            </nav>
+        </div>
+    </section>
+
+    <footer>
+        <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto </p>
+    </footer>
+
+</body>
+
 </html>

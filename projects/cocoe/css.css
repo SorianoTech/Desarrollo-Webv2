@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+
+html{
+    background-color: #EAEAE8;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2em;
+    color: #505050;
+    width: 768px;
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+}
+
+#header_arriba{
+    height: 80px;
+}
+#header_arriba #logo{
+    float: left;
+    margin-top: -25px;
+}
+
+#header_arriba #menu_navegacion{
+    float: left;
+}
+
+#header_arriba #menu_navegacion #icono_menu{
+    display: none;
+}
+
+#header_arriba #menu_social{
+    float: right;
+}
+
+#header_arriba #menu_navegacion ul, #menu_social ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#header_arriba #menu_navegacion ul, #menu_social ul{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#header_arriba #menu_navegacion ul li, #menu_social ul li{
+    float: left;
+}
+
+#header_arriba #menu_navegacion ul li a{
+    display: block;
+    text-decoration: none;
+    color: #505050;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+#header_arriba #menu_navegacion ul li a:hover, #header_arriba #menu_social ul li a:hover{
+    color: #EF2400;
+}
+
+#header_arriba #menu_social ul li a{
+    color: rgb(80,80,80);
+    font-size: 1.3em;
+    margin-right: 12px;
+}
+
+
+
+#header_arriba #menu_navegacion ul li a.rojo{
+    color: #EF2400;
+}
+
+#contenido #imagen_gorda img{
+    width: 100%;
+}
+
+#contenido #articulos{
+    margin-top: 40px;
+}
+
+#contenido #articulos article{
+    float: left;
+}
+
+#contenido #articulos article:hover{
+    margin-top: -10px;
+}
+
+
+#contenido #articulos article.centro{
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+#contenido #articulos #paginacion{
+    text-align: right;   
+}
+
+#contenido #articulos #paginacion a{
+    text-decoration: none;
+    color: #EF2400;
+}
+
+#contenido #articulos #paginacion a:hover{
+    color: #505050;
+}
+
+
+footer{
+    font-size: 0.5em;
+    text-align: center;
+}
+
+
+
+.borrar{
+    float: none;
+    clear: both;
+}
+
+
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    #header_arriba{
+        height: auto;
+        margin-bottom: 10px;
+    }    
+    #menu_opciones, #menu_social, #logo{
+        display: none;
+    }
+    
+    #contenido #articulos article{
+        float: left;
+        width: 50%;
+    }   
+    #contenido #articulos article img{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    #contenido #articulos article.centro{
+        margin-left: 0px;
+        margin-right: 0px;
+    }  
+    #header_arriba #menu_navegacion #icono_menu{
+        display: block;
+        font-size: 1.3em;
+        margin-left: 4px;
+    }
+    
+    #header_arriba #menu_navegacion ul li{
+        float: none;
+    }    
+}
+
+@media (max-width: 370px) {
+    #contenido #articulos article{
+        float: none;
+        width: 100%;
+    }       
+    
+}
