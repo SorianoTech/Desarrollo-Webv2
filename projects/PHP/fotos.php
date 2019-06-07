@@ -21,9 +21,9 @@
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
             Álbum</button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tailandia</a>
-              <a class="dropdown-item" href="#">México</a>
-              <a class="dropdown-item" href="#">Irlanda</a>
+              <a class="dropdown-item" href="">Tailandia</a>
+              <a class="dropdown-item" href="">México</a>
+              <a class="dropdown-item" href="">Irlanda</a>
             </div>
         </div>    
     </header>    
@@ -31,13 +31,15 @@
     <div class="container">
         <!-- Contenido aqui -->
         <?php
-            $foto = $_GET['num'];
+            $foto = $_GET['num'];/*metemos en la variable foto el valor obtenido por GET de num*/
+            $mexico= $_GET['mex'];
+            $tailandia= $GET['tai']; 
             echo '<img src="img/'.$foto.'.jpeg" height="20%" width="20%"><p>Imagen '.$foto.'</p>';
         ?>
         
         <ul>
-            <li><button type="button" class="btn btn-outline-primary"><a href="fotos.php?num=<?php echo ($foto-1) ?>">Anterior</a></button></li>
-            <li><button type="button" class="btn btn-outline-primary"><a href="fotos.php?num=<?php echo ($foto+1) ?>">Siguiente</a></button></li>
+            <li><button type="button" class="btn btn-outline-primary"><a href="fotos.php?num=1_<?php echo ($foto-1) ?>">Anterior</a></button></li>
+            <li><button type="button" class="btn btn-outline-primary"><a href="fotos.php?num=1_<?php echo ($foto+1) ?>">Siguiente</a></button></li>
         </ul>
     </div>
 </section>
