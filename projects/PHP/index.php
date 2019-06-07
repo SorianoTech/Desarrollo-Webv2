@@ -11,7 +11,7 @@
 <?php
 //Tabla de multiplicar en PHP
 //http://localhost/desarrollo-web/desarrollo-web/proyecto_curso/projects/PHP/index.php?num=8
-
+echo "Escribe index.php?num=8 al  final de la URL para que aparezca la tabla de multiplicar del 8";
 echo '<p>Dato recibido por GET (variable num) es igual a: '.$_GET['num'].'</p>';
 $number = $_GET['num'];
 echo '<p>La variable number es igual a: '.$number. '</p>';
@@ -51,8 +51,9 @@ $a = 5;
 $b = 8;
 echo '<p>El valor de la variable A es :' .$a.' </p>';
 echo '<p>El valor de la variable B es :' .$b.' </p>';
-$a = 8;
-$b = 5;
+$a = $a+$b;
+$b = $a-$b;
+$a = $a-$b;
 echo '<p>El valor de la variable A ahora es :'.$a.'</p>';
 echo '<p>El valor de la variable B ahora es :' .$b.' </p>';
 ?>

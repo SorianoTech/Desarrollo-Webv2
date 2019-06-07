@@ -1,0 +1,31 @@
+
+body{
+  background-color: #989393;
+}
+#main{
+  width: 100%;
+  margin-top: 50px;
+}
+.container{
+  text-align: center;
+}
+
+.container ul,li{
+  display:inline;
+  list-style-type: none;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+.container img{
+  max-height: 500px;
+  border: 15px solid black;
+  background-image: url();
+
+}
+
+.container a{
+  text-decoration: none;
+}
+
