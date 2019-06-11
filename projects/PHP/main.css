@@ -1,13 +1,43 @@
 
 body{
   background-color: #989393;
+  width: 80%;
+  margin: auto;
 }
-#main{
+
+#main_cabecera{
+    
+}
+
+#main_container{
   width: 100%;
   margin-top: 50px;
+  
 }
+
+
+
+#cabecera {
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 19px;
+letter-spacing: 3.8px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
+}
+
+#custom_select select{
+    display:none;
+    
+}
+
 .container{
   text-align: center;
+  padding-top: 50px;
 }
 
 .container ul,li{
@@ -33,3 +63,7 @@ header .dropdown{
     text-align: center;
 }
 
+#menu {
+  text-align: center;
+  
+}
