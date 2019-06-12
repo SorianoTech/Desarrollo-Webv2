@@ -54,7 +54,7 @@ and open the template in the editor.
                         <input type="number" name="ciu" placeholder="Ciudadanos">
                         <input type="number" name="pp" placeholder="PP">
                         <input type="number" name="up" placeholder="Unidas Podemos">
-                        <p><input type="submit" value="Calcular" class="btn btn-primary">
+                        <p><input type="submit" value="Calcular" class="btn btn-primary"></p>
                     </form>
                 </div>
                 <div class="col" id="resultado_votos">
@@ -74,7 +74,7 @@ and open the template in the editor.
             </div>
             
             <hr/>
-            <h2>Votos totales <?php echo $total;?>
+            <h2 id="pie">Votos totales <?php echo $total;?>
                 
         </section>
     </body>

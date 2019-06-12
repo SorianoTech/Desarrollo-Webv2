@@ -14,15 +14,16 @@ h1{
 }
 p {
     display:block;
+    
 }
 
 #recuento_votos input {
-    width: 3s0%;
+    margin-top: 10px;
+}
     
 
-}
 #porcentaje_votos #pp{
-             background-color:powderblue; 
+             background-color:black; 
 }
 
 #porcentaje_votos #ciu{
@@ -41,5 +42,9 @@ p {
     background-color: #B2B5B7;
     border-style: groove;
     border-radius: 10px;
+}
+
+#pie{
+    text-align: center;
 }
 
