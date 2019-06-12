@@ -1,6 +1,6 @@
 # Curso desarrollo web
 
-El curso de desarrollo web comenzó por la programación en java donde he aprendido a utilizar el software de desarrollo (IDE) Netbeans y aprendí los conceptos básicos de la programación más, puedes encontrar un resumen teórico [aquí](http://sorianotech.github.io).
+El curso de desarrollo web comenzó por la programación en java donde he aprendido a utilizar el software de desarrollo (IDE) Netbeans y aprendí los conceptos básicos de la programación orientada a objetos, puedes encontrar un resumen teórico [aquí](http://sorianotech.github.io).
 
 
 Una vez aprendidos estos conocimientos hemos realizado prácticas utilizando el stack de lenguajes de programación web.
