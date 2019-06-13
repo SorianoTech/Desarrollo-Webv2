@@ -54,6 +54,9 @@ Listado de elementos vistos:
 
 ### Enlaces
 
+- [Webpack](https://webpack.js.org/)
+- [Browserft](http://browserify.org/)
+
 
 ## PHP
 
@@ -85,3 +88,12 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 [Synfony](https://symfony.es/)
 
 [Laravel](https://laravel.com/docs/5.8/installation)
+
+
+
+# Monetizando
+
+## Enlaces
+
+Gogle adsense
+Google adwords
