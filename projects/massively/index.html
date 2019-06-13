@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--LINKS-->
+    <link href="include/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <title>Sergio Soriano</title>
+</head>
+
+<body>
+    <!--CABECERA-->
+    <header>
+        <h1 id="big-title">Sergio Soriano</h1>
+        <h2 id="subtitle">Programador web HTML5 + CSS3 + JavaScript + PHP @ContactoSoriano</h2>
+        <a href="#">
+            <div id="button_home"><i class="fas fa-arrow-down"></i></div>
+        </a>
+    </header>
+
+    <!--MENU PRINCIPAL-->
+    <aside id="main_menu">
+
+        <nav id="menu_options">
+            <ul>
+                <li><a href="">Menu 1</a></li>
+                <li><a href="">Menu 2</a></li>
+                <li><a href="">Menu 3</a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu_social">
+            <ul>
+                <li><a href=""><i class="fas fa-rss"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="del"></div>
+
+    <!---------- SECCIONES ---------->
+    <section id="content">
+
+        <h2 id="text-date">Parrafo para imprimir la fecha</h2>
+
+        <!--ARTICULOS GRANDES-->
+        <section id="big-section">
+            <article class="big-article">
+                <img src="img/pic01.jpg"></img>
+                <p class="text-news">Articulo grande</p>
+            </article>
+        </section>
+        <section id="small-section" class="button">
+            <!--ARTICULOS PEQUEÑOS-->
+            <article class="small-article">
+                <time>
+                    <p>25 Abril</p>
+                </time>
+                <img src="img/pic04.jpg"></img>
+                <p>Articulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo
+                    pequeñoArticulo pequeñoArticulo pequeño
+                </p>
+                <a href="">Full Story</a>
+            </article>
+
+            <article class="small-article">
+                <time>
+                    <p>25 Abril</p>
+                </time>
+                <img src="img/pic04.jpg"></img>
+                <p>Articulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo
+                    pequeñoArticulo pequeñoArticulo pequeño
+                </p>
+                <a href="">Full Story</a>
+            </article>
+
+            <article class="small-article">
+                <time>
+                    <p>25 Abril</p>
+                </time>
+                <img src="img/pic04.jpg"></img>
+                <p>Articulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo
+                    pequeñoArticulo pequeñoArticulo pequeño
+                </p>
+                <a href="">Full Story</a>
+            </article>
+
+            <article class="small-article">
+                <time>
+                    <p>25 Abril</p>
+                </time>
+                <img src="img/pic04.jpg"></img>
+                <p>Articulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo pequeñoArticulo
+                    pequeñoArticulo pequeñoArticulo pequeño
+                </p>
+                <a href="">Full Story</a>
+            </article>
+        </section>
+
+
+
+        <footer>
+            <div id="pagination">
+                <!--<a href="#" class="previous">Prev</a>-->
+                <ul>
+                    <li><a href="#" class="page active">1</a>
+                    <li><a href="#" class="page">2</a></li>
+                    <li><a href="#" class="page">3</a></li>
+                    <li><span class="extra">&hellip;</span></li>
+                    <li><a href="#" class="page">8</a></li>
+                    <li><a href="#" class="page">9</a></li>
+                    <li><a href="#" class="page">10</a></li>
+                    <li><a href="#" class="next">Next</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <div class="del"></div>
+
+        <footer>
+            <!--     COMIENZA FORMULARIO-->
+            <div id="formulario" class="borde_dcha">
+                <form action="#" method="post">
+                    <div id="nombre">
+                        <label for="name">NAME:</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div id="email">
+                        <label for="mail">MAIL:</label>
+                        <input type="email" id="mail" />
+                    </div>
+                    <div id="mensaje">
+                        <label for="msg">MESSAGE:</label>
+                        <textarea id="msg"></textarea>
+                    </div>
+                    <div id="boton_enviar">
+                        <input type="submit" value="SEND MESSAGE" />
+                    </div>
+                </form>
+            </div>
+            <!--        TABLA DATOS EMPRESA-->
+            <div id="datos_empresa">
+                <div class="borde_abajo" id="direccion">
+                    <table>
+                        <tr>
+                            <td class="tipogrueso">ADRESS</td>
+                            <td class="tipofino paddingizda">1234 Somewhere Road #87257<br>Nashville, TN 00000-0000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="borde_abajo" id="telefono">
+                    <table>
+                        <tr>
+                            <td class="tipogrueso">PHONE</td>
+                            <td class="tipofino paddingizda">00000-0000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="borde_abajo" id="correo">
+                    <table>
+                        <tr>
+                            <td class="tipogrueso">EMAIL</td>
+                            <td class="tipofino paddingizda">info@untitled.tld</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="borde_abajo" id="redessociales">
+                    <table>
+                        <tr>
+                            <td class="tipogrueso">SOCIAL</td>
+                            <td>
+                                <nav id="menu_social_footer">
+                                    <ul>
+                                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+        <div class="del"></div>
+
+
+        <!--PIE DE PÁGINA-->
+        <footer>
+            <p>Pie de Página</p>
+        </footer>
+
+</body>
+
+</html>

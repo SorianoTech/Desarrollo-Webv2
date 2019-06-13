@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+/*-----Reset CSS---------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*------------FULL WEBSITE-------- */
+
+body{
+    font-family: 'Merriweather', Georgia, serif;
+    background-image: url("../img/bg.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+}
+/*------------HEADER-------- */
+header{
+    text-align: center;
+    margin-top: 300px;
+    padding:  70px;
+    color: aliceblue;
+}
+
+#big-title{
+    font-size: 5rem;
+    line-height: 1; /*espacion entre lineas*/
+}
+
+#subtitle{
+  font-size: 2rem;
+  line-height: 1;
+  margin: 50px;
+}
+
+#text-date{
+    padding: 10px;
+}
+
+#main_menu {
+  background-color: white;
+  height: 55px;
+  margin: auto;
+
+}
+#main_menu ul li a{
+    display: block;
+    text-decoration: none;
+    
+}
+#menu_options ul li{
+  float:left;
+  padding:16px;
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+#menu_social ul li{
+  float:right;
+  padding: 16px;
+}
+
+ #button_home {
+    display: inline-block;
+    margin: auto;
+    margin-top: 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: solid 2px white;
+    line-height: 5;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+ }
+
+
+/*------------CONTENIDO-------- */
+
+#content {
+  display: block;
+  width: 100%;
+  margin: auto;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#content p{
+  padding-top: 10px;
+  
+}
+
+#small-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #FFFFFF;
+  width: 80%;
+  /*padding: 30px;*/
+  box-sizing: border-box;
+}
+
+#big-section{
+ margin: auto;
+ width: 80%;
+}
+
+/*Bordes izquierdos para los articulos pares*/
+.small-article:nth-child(even) {
+  border-left: 2px solid gray;
+}
+/*Bordes izquierdos para los dos primeros artículos*/
+.small-article:nth-child(-n+2) {
+  border-top: 2px solid gray;
+}
+
+/*tamaño ancho de los articulos y bordes inferiores*/
+.small-article{
+  width: 50%;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  border-bottom: 2px solid gray;
+}
+
+.small-article p{
+  margin-bottom:  20px;
+}
+
+.big-article {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.big-article p{
+    padding: 10px;
+}
+
+
+
+#pagination li{
+    display: block;
+    text-decoration: none;
+    float: left;
+    padding:16px;
+    font-size: 1.2em;
+}
+
+.del{
+    float: none;
+    clear: both;
+}
+
+/*------------PIE DE PÄGINA-------- */
+
+footer{
+    text-align: center;
+    clear:left;
+
+}
+
+
+/* -- CLASES REUTILIZABLES --*/
+
+/*Asignamos la clase a todos los enlaces y luego le asignamos la propiedad  al contenedor superior para que afecte a todas*/
+.button a{
+		font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: black;
+    font-size: .8em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+	}
