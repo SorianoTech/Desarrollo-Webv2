@@ -38,7 +38,7 @@
     Solo es posible utilizar HTML, CSS y PHP, en php podemos utilizar variables, y condicionales simples(estructiras de control) unicamente.
     <div id="cajero">
       <form class="pure-form" action="index.php" method="post">
-        <input type="number" class="pure-input-rounded" name="cantidad" place>
+        <input type="number" class="pure-input-rounded" name="cantidad" placeholder="Cantidad">
         <button type="submit" class="pure-button">Devolver Cambio</button>
         
       </form>
