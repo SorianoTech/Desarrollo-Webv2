@@ -16,3 +16,9 @@
 #caja_resultado {
   padding: 10px;
 }
+
+.pure-button,
+input {
+  line-height: normal;
+  color: blue;
+}
