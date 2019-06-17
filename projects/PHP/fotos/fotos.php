@@ -13,8 +13,9 @@
 </head>
 <body>
     <?php
-    $country = $_GET['country'];  // Guardamos el pais en la variable opcion
-    $foto = $_GET['im']; // Guardamos en la variable la imagen
+        $country = $_GET['country'];  // Guardamos el pais en la variable opcion
+        $foto = $_GET['im']; // Guardamos en la variable la imagen
+        $max = 6;
     ?>
     <header id="main_cabecera">
     <div class="jumbotron text-center" id="cabecera">
@@ -30,7 +31,7 @@
                     <option value="3">Irlanda</option>
                 </select>
             <input type="hidden" name="im" value="0" />   
-            <input type="submit" value="Seleccionar el Pais" />
+            <input type="submit" value="Seleccionar el País" />
             </form>
         </nav>    
     </header>    

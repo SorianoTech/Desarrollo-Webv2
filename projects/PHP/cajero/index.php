@@ -14,31 +14,18 @@
   <header>
     <?php 
           $cantidad = $_POST['cantidad'];
-          $bill_500 = $cantidad / 500;
-          $bill_200 = $cantidad / 200;
-          $bill_100 = $cantidad / 100;
-          $bill_50 = $cantidad / 50;
-          $bill_20 = $cantidad / 20;
-          $bill_10 = $cantidad / 10;
-          $bill_5 = $cantidad / 5;
-          $moneda_2 = $cantidad / 2;
-          $moneda_1 = $cantidad / 1;
-          $moneda_05 = $cantidad / 0.5;
-          $moneda_02 = $cantidad / 0.2;
-          $moneda_01 = $cantidad / 0.1;
-          $moneda_005 = $cantidad / 0.05;
-          $moneda_002 = $cantidad / 0.02;
-          $moneda_001 = $cantidad / 0.01;
+          $cantidad = $cantidad *100; //Convertimos la cantidad a un entero
 
         ?>
     <nav></nav>
   </header>  
   <section>
     <p>Se pide generar un programa en el que al introducir una cantidad de dinero en una caja de un formulario, nos devuelva mediante php la menor cantidad de billetes y monedas posibles.</p>
-    Solo es posible utilizar HTML, CSS y PHP, en php podemos utilizar variables, y condicionales simples(estructiras de control) unicamente.
+    Solo es posible utilizar HTML, CSS y PHP, en php podemos utilizar variables, y condicionales simples(estructiras de control) unicamente.<br/><br/><br/>
     <div id="cajero">
       <form class="pure-form" action="index.php" method="post">
-        <input type="number" class="pure-input-rounded" name="cantidad" place>
+        <p>Introduce la cantidad con dos decimales(utilizando "." para separa la parte decimal</p>
+        <input type="number" step=".01" class="pure-input-rounded" name="cantidad" place> <!--step para definir el numero de decimales-->
         <button type="submit" class="pure-button">Devolver Cambio</button>
         
       </form>
@@ -46,31 +33,80 @@
         <img class="pure-img" src="">
         <i class="fas fa-euro-sign"></i>
         <?php 
-        echo $cantidad;
-        echo '<p>Billete 500: '.$bill_500.'</p>';
-        echo '<p>Billete 200: '.$bill_200.'</p>';
-        echo '<p>Billete 100: '.$bill_100.'</p>';
-        echo '<p>Billete 50: '.$bill_50.'</p>';
-        echo 'Resto de 500 es: '.$cantidad;
+        echo $cantidad.' en céntimos'; //imprimimos la cantidad en centimos
 
-        if ($cantidad > 0){
-          echo '<p>Bien, tenemos dinero!! Ahora veamos cuantos billetes y monedas puedo darte :)<p>';
-            if($bill_500>0){ 
-              echo '<p>Toma billetaco!</p>';
-              echo '<p>Te corresponden '.$bill_500.' de 500</p>';
-              $restante=($cantidad-(500*$bill_500));
-              if($restante%500) == 0){
-
-              }
-              echo '<p>Cantidad despues de restar el billete: '.$cantidad.'</p>';
-            }if($bill_200>0 && ($cantidad%200) == 0){
-              echo '<p>Te corresponden '.$bill_200.' billetes de 200</p>';
-            }
-        } else{
-          echo '<p>Mierda, no tenemos dinero!! Consigue un poco y dime la cantidad que tienes</p>';
+        //Biiletes y monedas 5000-2000-1000-500-200-100-50
+        //Monedas 200-100-50-10-5-2-1
+        if (($cantidad/50000) > 0){ //Existe billete de 500
+          $resto = $cantidad%50000; //Comprobamos el resto de los billetes de 500 para saber si necesitamos mas billetes
           
+            if($resto>0){ //Quiere decir que tenemos que dar mas billetes NO EXACTO
+              $entero = $cantidad - $resto; //restamos el resto al importe para saber cuantos billetes exactos tenemos que dar
+              $bill_500 = $entero / 50000; //Calculo los billetes de 500 que tengo que dar
+              echo '<p>Te corresponden '.$bill_500.' billetes de 500€ NO EXACTOS</p>';
+              echo '<p>Te queda por repartir '.$resto.' céntimos de euro</p>';
+              $cantidad = $resto;
+              if($cantidad%2000>0){ //billetes de 200 no exactos
+                $entero = $cantidad - $resto;
+                $bill_200 = $entero / 20000;
+                echo '<p>Te corresponden '.$bill_200.' billetes de 200€ NO EXACTOS</p>';
+                 echo '<p>Te queda por repartir '.$resto.' céntimos de euro</p>';
+                $cantidad = $resto;
+              }else{ //Billetes de 200 exactos
+                $bill_200 = $cantidad / 20000; //Calculo los billetes de 500 que tengo que dar
+                echo '<p>Te corresponden '.$bill_200.' billetes de 200€ EXACTOS</p>';
+              }
+            }else{ //En caso de que el resto me de 0 (numero exacto de billetes)
+              $bill_500 = $cantidad / 50000; //Calculo los billetes de 500 que tengo que dar
+              echo '<p>Te corresponden '.$bill_500.' billetes de 500€ EXACTOS</p>';
+            }
         }
-        
+        if(($cantidad/20000) > 0){ //Existe billete de 200)
+          echo '<h1>Billete de 200</h1>';
+        }
+        if(($cantidad/10000) > 0){ //Existe billete de 100)
+          echo 'Billete de 100';
+        }
+        if(($cantidad/5000) > 0){ //Existe billete de 50)
+          echo 'Billete de 50';
+        }
+        if(($cantidad/2000) > 0){ //Existe billete de 20)
+          echo 'Billete de 20';
+        }
+        if(($cantidad/1000) > 0){ //Existe billete de 10)
+          echo 'Billete de 10';
+        }
+        if(($cantidad/500) > 0){ //Existe billete de 5)
+          echo 'Moneda de 5';
+        }
+        if(($cantidad/200) > 0){ //Existe moneda de 2)
+          echo 'Moneda de 2';
+        }
+        if(($cantidad/100) > 0){ //Existe moneda de 1)
+          echo 'Moneda de 1';
+        }
+        if(($cantidad/50) > 0){ //Existe moneda de 50cent)
+          echo 'Monedas de 50 cent';
+        }
+        if(($cantidad/20) > 0){ //Existe moneda de 20cent)
+          echo 'Billete de 20 cent';
+        }
+        if(($cantidad/10) > 0){ //Existe moneda de 10cent)
+          echo 'Billete de 10 cent';
+        }
+        if(($cantidad/5) > 0){ //Existe moneda de 5cent)
+          echo 'Billete de 5 cent';
+        }
+        if(($cantidad/2) > 0){ //Existe moneda de 5cent)
+          echo 'Billete de 2 cent';
+        }
+        if(($cantidad/1) > 0){ //Existe moneda de 5cent)
+          echo 'Billete de 1 cent';
+        }
+        else{
+          echo '<p>Mierda, no tenemos dinero!! Consigue un poco y dime la cantidad que tienes</p>';
+        }
+
         ?>
       </div>
       
