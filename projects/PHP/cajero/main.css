@@ -1,0 +1,15 @@
+#cajero {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border: 10px solid gray;
+  border-radius: 50px;
+  background-color: #0059B2;
+  color: white;
+
+
+}
+
+#caja_resultado {
+  padding: 10px;
+}
