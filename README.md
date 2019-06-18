@@ -19,7 +19,7 @@ Listado de elementos vistos:
 - [Boilerplate HTML5](https://html5boilerplate.com/)
 - [Plantillas Skeleton](http://getskeleton.com/)
 - [Cheatsheet](https://htmlcheatsheet.com/)
-- [Bootstrap](https://getbootstrap.com/docs/4.1/layout/overview/)
+- [Bootstrap](https://getbootstrap.com/docs/)
 
 ----
 
@@ -42,7 +42,7 @@ Listado de elementos vistos:
 
 [W3School](https://www.w3schools.com/css/default.asp)
 
-### Librerias de estilos
+### Librerías de estilos
 
 [PureCSS](https://purecss.io/)
 
