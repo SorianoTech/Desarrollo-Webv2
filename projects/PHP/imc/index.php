@@ -16,28 +16,65 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $peso = $_POST['peso'];
-        $altura = $_POST['altura'];
-        $imc = ($peso)/($altura*$altura);
-        ?>
-        
-        <div class="container">
-        <form action="index.php" method="post">
-            <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-lg">Altura</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="altura">
-            </div>
+        if($_POST){
+            $peso = $_POST['peso'];
+            $talla = $_POST['talla'];
 
-            <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-lg">Peso</span>
+            $imc = $peso/($talla*$talla);
+
+            if($imc < 18.5){
+                $mensaje = "Tu peso se encuentra por debajo de lo saludable.";
+                $img = "bajoPeso";
+                $color = "red";
+            }elseif(($imc >= 18.5) && ($imc <= 29.9)){
+                $mensaje = "Te encuentra en el peso ideal.";
+                $img = "pesoIdeal";
+                $color = "green";
+            }elseif(($imc > 29.9) && ($imc <= 34.9)){
+                $mensaje = "Sufres de obesidad clase I.";
+                $img = "obesidadC1";
+                $color = "red";
+            }elseif(($imc > 34.9) && ($imc <= 39.9)){
+                $mensaje = "Sufres de obesidad clase II";
+                $img = "obesidadC2";
+                $color = "red";
+            }else{
+                $mensaje = "Sufres de obesidad clase III.";
+                $img = "obesidadC3";
+                $color = "red";
+            }
+        }
+    ?>
+            <style>
+                #barra_color{
+                    background-color: <?php echo $color; ?>;
+                    
+                }
+            </style>
+        <section>
+        <div class="container">
+            <form action="index.php" method="post">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Altura</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="talla" placeholder="1.40">
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="peso">
-            </div>
-            <input type="submit" value="Submit">  
-        </form>
-        </div>    
+
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Peso</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="peso" placeholder="70">
+                </div>
+                <input type="submit" value="Calcular">  
+            </form>
+            <aside>
+                <div id="barra_color">&nbsp;</div>
+                <p>Tienes un Índice de Masa Corporal de <?php if($_POST){ echo $imc;} ?></p>
+                <img src="img/<?php echo $img; ?>.jpg" alt="imc">
+            </aside>    
+        </div>
+        </section>
     </body>
 </html>

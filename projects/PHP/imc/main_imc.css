@@ -8,12 +8,31 @@ and open the template in the editor.
     Author     : sergio
 */
 
-body{
+body {
     height: 100%;
-    background-color: #173F5F; 
+    background-color: #173F5F;
 }
 
-.container{
-    padding:100px;
-    
+form {
+    padding: 20px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    /*padding: 100px;*/
+    border: 10px solid gray;
+    border-radius: 50px;
+    background-color: #0059B2;
+    color: white;
+
+}
+
+aside {
+    padding: 20px;
+    text-align: center;
+}
+
+aside p {
+    color: white;
 }
