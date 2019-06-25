@@ -26,22 +26,23 @@
   $contador_fila = 0;
   $contador_col = 0;
   ?>
-  <table>
-  <?php
-    while($contador_fila<=$fila){
-      echo '<tr>';
-      $contador_fila++;
-      $contador_col=0;
-      while($contador_col<=$col){
-        $contador_col++;
-        echo '<td>'.$caracter.'</td>';
-      }  
-    echo '</tr>';
-  }
+  <div>
+    <table>
+    <?php
+      while($contador_fila<=$fila){
+        echo '<tr>'; //identificador de col 1 fila 1
+        $contador_fila++;
+        $contador_col=0; // reseteamos el contador de las columnas para que pinte las siguientes filas
+        while($contador_col<=$col){
+          $contador_col++;
+          echo '<td>'.$caracter.'</td>'; //imprime tantas columnas 
+        }  
+      echo '</tr>';
+    }
 
-  ?>
-  </table>
-  
+    ?>
+    </table>
+    </div>
   </div>
 </section>
 

@@ -148,4 +148,24 @@
             return 1;
         }
     }
+
+    //funcion rombo
+    function rombo($altura = 3, $char = '*') {
+    if ($altura % 2 === 0 || $altura < 2) return;
+    $rombo = array();
+    $n = ceil($altura / 2);
+    do {
+        $arr = array_pad(array(), $n, ' ');
+        $arr[key($arr)] = $char;
+        end($arr);
+        $arr[key($arr)] = $char;
+        $rombo[] = $arr;
+    } while (--$n);
+    $temp = array_reverse($rombo);
+    array_pop($temp);
+    $rombo = array_merge($temp, $rombo);
+    return array_reduce($rombo, function($r, $v) use($altura) {
+        return $r .= str_pad(implode(' ', $v), $altura , ' ', STR_PAD_BOTH) . "\n";
+    });
+}
 ?>
