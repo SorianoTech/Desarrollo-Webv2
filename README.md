@@ -77,8 +77,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - [Documentación oficial PHP](https://www.php.net/manual/es/)
 - [Sintaxis básica PHP](https://www.php.net/manual/es/language.basic-syntax.phpmode.php)
 - [Condicionales](https://www.php.net/manual/es/control-structures.if.php)
-
--
+- [Pakage Manager](https://packagist.org/)
 
 ### Frameworks
 
@@ -89,8 +88,8 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 
 ### Enlaces
 
-Gogle adsense
-Google adwords
+- Google adsense
+- Google adwords
 
 ## Serverless
 
@@ -101,3 +100,8 @@ Google adwords
 # Awesome Links
 
 - [<https://github.com/sindresorhus/awesome>](https://github.com/sindresorhus/awesome)
+
+
+# Comunidades de programadores
+
+[La web del programador](https://www.lawebdelprogramador.com/)

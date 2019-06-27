@@ -29,7 +29,7 @@
     $con_col=0; //reseteamos el contador para que imprima columnas hasta que con_filas sea igual 
     
     while($con_col<=$con_filas){
-      if((($con_col==($con_filas/2)) || ($con_filas==$filas)){
+      if((($con_col==($con_filas/2)) || ($con_filas==$filas))){
       echo '*';
       $con_col++;
       }else{

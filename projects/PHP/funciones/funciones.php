@@ -138,6 +138,7 @@
         
     }
 
+    //Devuelve 0 si el numero es 0, 2 si es par y 1 si es impar
     function parimpar($num) {
         if($num == 0){
             return 0;
@@ -167,5 +168,37 @@
     return array_reduce($rombo, function($r, $v) use($altura) {
         return $r .= str_pad(implode(' ', $v), $altura , ' ', STR_PAD_BOTH) . "\n";
     });
+}
+
+//Devuelve una array numérica de forma ordenada
+function burbuja($array)
+{
+    for($i=1;$i<count($array);$i++) //creamos un bucle que vaya hasta el final de la array
+    {
+        for($j=0;$j<count($array)-$i;$j++) //creamos otro bucle que vaya hasta el final de la array menos 1
+        {
+            if($array[$j]>$array[$j+1]) //preguntamos, si el valor de la array es mayor que el siguiente
+            {
+                $temp=$array[$j+1]; //en caso de que asi sea creo una variable temp(para guardar el valor menor)
+                $array[$j+1]=$array[$j]; //asigno el valor menor al primer valor de la array
+                $array[$j]=$temp; //asigno el valor superior a la variable temp, para comprobar en la siguiente vuelta.
+            }
+        }
+    }
+ 
+    return $array; //Devuelvo la array
+}
+
+//devuelve x números aleatorios en función de la cantidad introducida.
+//Ejemplo, randomNumber(8)-> 92838582
+function randomNumber($digitos)
+{
+  $devuelvenum = mt_rand(1, 9);
+  while (strlen($devuelvenum) < $digitos) {
+    $devuelvenum .= mt_rand(0, 9);
+  }
+
+  
+  return $devuelvenum;
 }
 ?>

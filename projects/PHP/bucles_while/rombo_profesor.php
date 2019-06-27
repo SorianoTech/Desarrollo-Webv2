@@ -70,7 +70,6 @@
 
         <br><br>
 
-
         <?
         //rombo abajo vacio
         $can = $_POST['numero'];

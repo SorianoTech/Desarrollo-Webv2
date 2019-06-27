@@ -25,15 +25,15 @@
 
 
 
-                    
-                            <?php
-                            if ($opcion == 1) { //caso suma
-                                echo '<h1>Sumas de ' . $number . ' Dígitos: </h1>';
-                                echo '<div class="1">
+
+                    <?php
+                    if ($opcion == 1) { //caso suma
+                        echo '<h1>Sumas de ' . $number . ' Dígitos: </h1>';
+                        echo '<div class="1">
                                 <div class="2">';
-                                while ($contador < $columnas) {
-                                    $contador++;
-                                    echo '
+                        while ($contador < $columnas) {
+                            $contador++;
+                            echo '
             <div class="3">
               
               <table> 
@@ -42,7 +42,7 @@
                     <td>' . randomNumber($number) . '</td>
                   </tr>
                   <tr>
-                    <td>'.randomNumber($number).'+</td>
+                    <td>' . randomNumber($number) . '+</td>
                   </tr>
                   <tr>
                     <td>-------- </td>
@@ -50,23 +50,45 @@
                 </tbody>
               </table>
             </div>';
-                            }} else {
-                                    echo "RESTA";
-                                }
-                            
-                                ?>
-                        </div>
-                    </div>
-                    <!--div de maquetador de paginas-->
-                </div>    
+                        }
+                    } else {
+                        echo '<h1>Restas de ' . $number . ' Dígitos: </h1>';
+                        echo '<div class="1">
+                                <div class="2">';
+                        while ($contador < $columnas) {
+                            $contador++;
+                            echo '
+            <div class="3">
+              
+              <table> 
+                <tbody>
+                  <tr>
+                    <td>' . randomNumber($number) . '</td>
+                  </tr>
+                  <tr>
+                    <td>' . randomNumber($number) . '-</td>
+                  </tr>
+                  <tr>
+                    <td>-------- </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>';
+                        }
+                    }
+                    ?>
+                </div>
             </div>
-        </div>
+            <!--div de maquetador de paginas-->
+        </div>    
+    </div>
+</div>
 
-        <!--Meter en un bucle para que autogenere páginas>
-        <div class="page">
-            <div class="subpage">Page 2/2</div>    
-        </div>
-        -->
+<!--Meter en un bucle para que autogenere páginas>
+<div class="page">
+    <div class="subpage">Page 2/2</div>    
+</div>
+-->
 
-    </body>
+</body>
 </html>

@@ -5,6 +5,8 @@ function randomNumber($digitos)
   while (strlen($devuelvenum) < $digitos) {
     $devuelvenum .= mt_rand(0, 9);
   }
+
+  
   return $devuelvenum;
 }
 
