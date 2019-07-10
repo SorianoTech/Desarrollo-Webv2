@@ -34,7 +34,7 @@
         </style>
     </head>
     <body>
-        <form action="rombo.php" method="post" accept-charset="utf-8">
+        <form action="rombo_profesor.php" method="post" accept-charset="utf-8">
             <input type="number" placeholder="Numero" name="numero">
             <input type="submit" value="Enviar">
         </form>
@@ -62,7 +62,7 @@
                 }
                 ++$columnas;
             }
-            $columnas = 1;
+            $columnas = 1; //vuelvo a inicializar las columnas
             echo '<br>';
             ++$filas;
         }

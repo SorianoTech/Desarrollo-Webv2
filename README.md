@@ -70,14 +70,13 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - Las variables en PHP se definen con el símbolo `$` (\$variable) y no es necesario indicar el tipo de variable, php es capaz de identificar si es de tipo texto o numérica.
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 
-
-
 ### Enlaces
 
 - [Documentación oficial PHP](https://www.php.net/manual/es/)
 - [Sintaxis básica PHP](https://www.php.net/manual/es/language.basic-syntax.phpmode.php)
 - [Condicionales](https://www.php.net/manual/es/control-structures.if.php)
 - [Pakage Manager](https://packagist.org/)
+- [La manera correcta](https://phptherightway.com/)
 
 ### Frameworks
 
@@ -96,11 +95,9 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - [Netifly](https://www.netlify.com/)
 - [Github Pages](https://pages.github.com/)
 
-
 # Awesome Links
 
-- [<https://github.com/sindresorhus/awesome>](https://github.com/sindresorhus/awesome)
-
+- [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 
 # Comunidades de programadores
 

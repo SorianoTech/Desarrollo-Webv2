@@ -37,7 +37,7 @@
     }
     $con_filas++;
     echo '<br/>';
-  }
+  }}
 
     //Inversa desde con_filas hasta 0
     while($con_filas>=0){
@@ -48,7 +48,8 @@
       }
       $con_filas--; //las filas se van restando
       echo '<br/>';
-    }
+      }
+    
 ?>
 
   <?

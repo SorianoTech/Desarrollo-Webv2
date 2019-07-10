@@ -1,0 +1,19 @@
+body {
+  width: 35%;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+td {
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 40px;
+}

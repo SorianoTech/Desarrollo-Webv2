@@ -62,12 +62,6 @@
     }
   }
 
-  echo '<pre>';
-  print_r($vector);
-  echo '</pre>';
-  /*foreach($filas as $clave => $valor){
-    echo 'Elemento de la array['.$clave.']:'.$valor.'<br>';
-  }*/
 
   for ($i = 0; $i < count($vector); $i++) {
     for ($j = 0; $j < count($vector); $j++) {
@@ -160,18 +154,6 @@
     echo '<br>';
     //echo '<pre>'; print_r($cartones[$i]); echo '</pre>';
   }
-
-
-  $cartone = burbuja(crearArray_norep(4, 0, 10));
-  //$cartone = crearArray_norep(4, 11, 20);
-  //$cartone = crearArray_norep(4, 21, 30);
-  //$cartone = crearArray_norep(4, 30, 40);
-  echo '<h1> Cartone2 </h1>';
-  echo '<pre>';
-  echo print_r($cartone);
-  echo '</pre>';
-
-  imprimirVector($cartone);
 
   //CARTONES PROFESOR
   $cantidad_cartones = $_POST['cantidad'];
