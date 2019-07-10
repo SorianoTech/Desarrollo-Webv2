@@ -5,3 +5,4 @@
 [ ] Selector de imágenes, en el que elijo el álbum y pueda ver la foto y la descripción.
 [ ] Genera un tablero de ajedrez de 8x8 con 8 reinas situadas que no se maten.
 [ ] Generar un sudoku
+[ ] Generar un mensaje y encriptarlo

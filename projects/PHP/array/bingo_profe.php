@@ -22,7 +22,7 @@ function crear_array_alearios($cantidad, $min, $max)
     //Creo el array espejo desde la posición min hasta el max
     for ($index = $min; $index <= $max; $index++) {
         //si min = 10 y max = 30- $numeros_sacados[1-2-3] = 10 / $index=10-11-12 
-        $numeros_sacados[$key++] = $index;
+        $numeros_sacados[$key++] = $index; //meto los valores 10-11-12 en la array 
     }
     //bucle para que no se repitan los números,mete los valores en otra array y le resta 1
     for ($index = 0; $index < $cantidad; $index++) {
