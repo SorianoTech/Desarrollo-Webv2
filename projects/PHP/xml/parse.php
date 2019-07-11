@@ -37,8 +37,8 @@
     echo '<h1>' . $valor->title . '</h1>';
     echo '<p>' . $valor->description . '</p>';
   }
-  $url=['http://ep00.epimg.net/rss/elpais/portada.xml'];
-  
+  $url = ['http://ep00.epimg.net/rss/elpais/portada.xml', 'https://gitlab.com/victorhck.atom?feed_token=tmw7NV6F-g4sPsmXourZ'];
+ 
   ?>
 
   <div id="accordion">
