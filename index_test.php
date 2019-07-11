@@ -18,11 +18,11 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
-<?php
-  $contents = file_get_contents("projects.json");
-  $contents = utf8_encode($contents);
-  $json_data = json_decode($contents, true);
-?>
+  <?php
+    $contents = file_get_contents("../projects.json");
+    $contents = utf8_encode($contents);
+    $json_data = json_decode($contents, true);
+  ?>
 </head>
 
 <body id="page-top">
@@ -107,114 +107,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><a href=projects/cocoe/>Cocoe </a> </td> <td><a
-                    href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/cocoe">Aquí </a> </td>
-              <td>Aprendemos
-                como maquetar una web sencilla y colocar los
-                elementos en la web mediante cajas flotantes, crear pequeños efectos visuales con eventos
-                en etiquetas con CSS y modificar elementos del menu con una función y la libreria JQuery..</td>
-              <td>27/06/2019</td>
-            </tr>
-            <tr>
-              <td><a href="projects/massively/"">Massively </a> </td> <td><a
-                    href=" https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/massively">Aquí </a>
-                  </td> <td>Aprendemos a identificar las etiquetas
-                  de HTHML en css mediante clases y identificadores, y organizar los contenedores con <b>flex-box</b>.
-              </td>
-              <td>03/05/2019</td>
-            </tr>
-            <tr>
-              <td scope=" row"> <a href="projects/PHP/tabla/tabla_multiplicar.php">Tabla de multiplicar en PHP</a></td>
-              <td><a href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/tabla">Aquí </a>
-              </td>
-              <td>Conceptos básicos de PHP, variables y operaciones aritméticas sencillas</td>
-
-              <td>05/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/fotos/fotos.php">Slide de fotos en PHP</a></td>
-              <td><a href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/fotos">Aquí </a>
-              </td>
-              <td>Utilizamos el método GET para crear web dinámicas.</td>
-              <td>07/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/imc/">Calculo del IMC </a></td>
-              <td><a href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/imc">Aquí </a> </td>
-              <td>Utilizamos inputs con método POST.</td>
-              <td>11/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/cajero/">Cajero</a></td>
-              <td><a href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/cajero">Aquí </a>
-              </td>
-              <td>Condicionales <b>IF</b> anidados</td>
-              <td>17/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/bucles_while/numeros.php">Números</a></td>
-              <td><a href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while">Aquí
-                </a>
-              </td>
-              <td>Bucle sencillo con while</td>
-              <td>17/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/bucles_while/asteriscos.php">Asteriscos</a></td>
-              <td><a
-                  href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while/asteriscos.php">Aquí
-                </a>
-              </td>
-              <td>Bucle anidado con while.Muestra una tabla de caracteres solicitando al usuario el número de columnas y
-                filas</td>
-              <td>18/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/bucles_while/asteriscos_hueco.php">Asteriscos con hueco</a>
-              </td>
-              <td><a
-                  href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while/asteriscos_hueco.php">Aquí
-                </a>
-              </td>
-              <td>Bucle anidado con while y operadores lógicos. Muestra una tabla de carácteres solicitando al usuario
-                el
-                número de columnas y filas dejando huecos en blanco entre medias.</td>
-              <td>19/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/bucles_while/asterisco_rombo.php">Rombo asteriscos</a>
-              </td>
-              <td><a
-                  href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while/asterisco_rombo.php">
-                  Aquí</a>
-              </td>
-              <td> Rombo con asteriscos</td>
-              <td>21/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/impresion/">Fichas de alumnos para
-                  impresión</a></td>
-              <td><a href="https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/impresion/">
-                  Aquí</a></td>
-              <td>Aplicación para generar automáticamente ejercicios de suma y restas </td>
-              <td>25/06/2019</td>
-            </tr>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/array/bingo_limpio.php">Cartones de Bingo</a></td>
-              <td><a
-                  href="https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/array/bingo_limpio.php">
-                  Aquí</a></td>
-              <td>Generar X cartones de Bingo según la entrada que indique mediante arrays.</td>
-              <td>06/07/2019</td>
-            <tr>
-              <td scope="row"> <a href="projects/PHP/array/encriptado.php">Encriptar</a></td>
-              <td><a
-                  href="https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/array/encriptado.php">
-                  Aquí</a></td>
-              <td>Encripta una entrada de texto introduciendo el contenido en una array</td>
-              <td>01/07/2019</td>
-            </tr>
+            <?php
+            foreach ($json_data as $clave => $valor) {
+              //Imprime los elementos de la tabla
+              echo '
+              <tr>
+                <td scope="row"><a href='.$valor['url_nombre'].'>'.$valor['nombre'].'</a></td>
+                <td><a href="'.$valor['url_codigo'].'">Aquí</a></td>
+                <td>'.$valor['descripcion'].'</td>
+                <td>'.$valor['fecha'].'</td>
+              </tr>';
+              }
+              ?>
           </tbody>
         </table>
 
