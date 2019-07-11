@@ -1,0 +1,92 @@
+[{
+    "nombre": "Cocoe",
+    "url_nombre": "projects/cocoe/",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/cocoe",
+    "descripcion": "Aprendemos como maquetar una web sencilla y colocar los elementos en la web mediante cajas flotantes, crear pequeños efectos visuales con eventos en etiquetas con CSS y modificar elementos del menu con una función y la libreria JQuery",
+    "fecha": "27/06/2019"
+  }, {
+    "nombre": "Massively",
+    "url_nombre": "projects/massively/",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/massively",
+    "descripcion": "Aprendemos a identificar las etiquetas de HTHML en css mediante clases y identificadores, y organizar los contenedores con flex-box.",
+    "fecha": "03/05/2019"
+  },
+  {
+    "nombre": "Tabla de Multiplicar",
+    "url_nombre": "projects/PHP/tabla/tabla_multiplicar.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/tabla",
+    "descripcion": "Conceptos básicos de PHP, variables y operaciones aritméticas sencillas.",
+    "fecha": "05/06/2019"
+  },
+  {
+    "nombre": "Slide de fotos en PHP",
+    "url_nombre": "projects/PHP/fotos/fotos.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/fotos",
+    "descripcion": "Utilizamos el método GET para crear web dinámicas.",
+    "fecha": "07/06/2019"
+  },
+  {
+    "nombre": "Calculo del IMC",
+    "url_nombre": "projects/PHP/imc/",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/imc",
+    "descripcion": "Utilizamos inputs con método POST.",
+    "fecha": "03/05/2019"
+  },
+  {
+    "nombre": "Cajero",
+    "url_nombre": "projects/PHP/cajero/",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/cajero",
+    "descripcion": "Condicionales IF anidados.",
+    "fecha": "17/06/2019"
+  },
+  {
+    "nombre": "Números",
+    "url_nombre": "projects/PHP/bucles_while/numeros.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while",
+    "descripcion": "Bucle sencillo con while.",
+    "fecha": "17/06/2019"
+  },
+  {
+    "nombre": "Asteriscos",
+    "url_nombre": "projects/PHP/bucles_while/asteriscos.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while/asteriscos.php",
+    "descripcion": "Bucle anidado con while.Muestra una tabla de caracteres solicitando al usuario el número de columnas y filas.",
+    "fecha": "18/06/2019"
+  },
+  {
+    "nombre": "Asteriscos con hueco",
+    "url_nombre": "projects/PHP/bucles_while/asteriscos_hueco.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while/asteriscos_hueco.php",
+    "descripcion": "Bucle anidado con while y operadores lógicos. Muestra una tabla de carácteres solicitando al usuario el número de columnas y filas dejando huecos en blanco entre medias.",
+    "fecha": "19/06/2019"
+  },
+  {
+    "nombre": "Rombo asteriscos",
+    "url_nombre": "projects/PHP/bucles_while/asterisco_rombo.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/bucles_while/asterisco_rombo.php",
+    "descripcion": "Rombo con asteríscos generado con bucles while.",
+    "fecha": "21/06/2019"
+  },
+  {
+    "nombre": "Fichas de alumnos para impresión",
+    "url_nombre": "projects/PHP/impresion/",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/PHP/impresion/",
+    "descripcion": "Aplicación para generar automáticamente ejercicios de suma y restas.",
+    "fecha": "25/06/2019"
+  },
+  {
+    "nombre": "Cartones de Bingo",
+    "url_nombre": "projects/PHP/array/bingo_limpio.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/array/bingo_limpio.php",
+    "descripcion": "Generar X cartones de Bingo según la entrada que indique mediante arrays.",
+    "fecha": "06/07/2019"
+  },
+  {
+    "nombre": "Encriptado",
+    "url_nombre": "projects/PHP/array/encriptado.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/array/encriptado.php",
+    "descripcion": "Encripta una entrada de texto introduciendo el contenido en una array",
+    "fecha": "01/07/2019"
+  }
+
+]

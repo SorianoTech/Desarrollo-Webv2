@@ -19,9 +19,8 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <?php
-    $contents = file_get_contents("../projects.json");
-    $contents = utf8_encode($contents);
-    $json_data = json_decode($contents, true);
+    $contents = file_get_contents("projects/projects.json");
+    $json_data = json_decode($contents, true); 
   ?>
 </head>
 
@@ -109,7 +108,7 @@
           <tbody>
             <?php
             foreach ($json_data as $clave => $valor) {
-              //Imprime los elementos de la tabla
+              //Imprime los elementos de la tabla generados por el fichero projects/projects.json
               echo '
               <tr>
                 <td scope="row"><a href='.$valor['url_nombre'].'>'.$valor['nombre'].'</a></td>
