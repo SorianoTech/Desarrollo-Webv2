@@ -11,7 +11,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <link href="main_votaciones.css" rel="stylesheet" type="text/css"/>
-        <?php
+        <?
         $cantidad = $_POST['cantidad'];
         $partido = $_POST['partido'];
         $votos = $_POST['votos'];
@@ -56,29 +56,26 @@ and open the template in the editor.
                     <h2>Resultados de votos</h2> <br/> 
                     <? 
                     if(isset($partido)){
-                    for ($i=0; $i <count($partido); $i++) { 
-                    $totales+=$votos[$i];
-                    $porcentaje[$i]=round((($votos[$i]*100)/$totales));
-                    echo $partido[$i];
-                    echo '<br>';
-                    }
+                        for ($i=0; $i <count($partido); $i++) { 
+                            $totales+=$votos[$i];
+                            $porcentaje[$i]=round((($votos[$i]*100)/$totales));
+                            echo $partido[$i];
+                            echo '<br>';
+                        }
                     ?>
                 </div>   
                 <div class="col" id="porcentaje_votos">
                     <h2>Porcentajes Visual:</h2> <br/>
                     <?
                     for ($i=0; $i <count($partido) ; $i++) { 
-                    echo '<div id="'.$partido[$i].'" style="width:'.$porcentaje[$i].'%;background-color:rgb('.mt_rand(0,255).','.mt_rand(0,255).','.mt_rand(0,255).')">'.$porcentaje[$i].'</div>';
+                        echo '<div id="'.$partido[$i].'" style="width:'.$porcentaje[$i].'%;background-color:rgb('.mt_rand(0,255).','.mt_rand(0,255).','.mt_rand(0,255).')">'.$porcentaje[$i].'</div>';
                     }
                     }
                     ?>
                 </div>
-
             </div>
 
             <h2 id="pie">Votos totales <?php echo $totales; ?>
-
-
         </section>
     </body>
 </html>
