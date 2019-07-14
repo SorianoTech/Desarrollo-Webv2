@@ -26,7 +26,7 @@ function crear_array_alearios($cantidad, $min, $max)
     }
     //bucle para que no se repitan los números,mete los valores en otra array y le resta 1
     for ($index = 0; $index < $cantidad; $index++) {
-        $indice = rand(0, count($numeros_sacados) - $index - 1); //indice es igual a numero aletorio entre 0 y contador del array espejo menos el indice menos
+        $indice = rand(0, count($numeros_sacados) - $index - 1); //indice es igual a numero aleatorio entre 0 y contador del array espejo menos el indice menos
         $numeros[$index] = $numeros_sacados[$indice];
         $numeros_sacados[$indice] = $numeros_sacados[count($numeros_sacados) - $index - 1];
         $numeros_sacados[count($numeros_sacados) - $index] = $numeros[$index];

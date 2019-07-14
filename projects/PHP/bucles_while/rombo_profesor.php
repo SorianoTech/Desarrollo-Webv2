@@ -44,7 +44,7 @@
         $can = $_POST['numero'];
         $filas = 1;
         $columnas = 1;
-        while ($filas <= (($can * 2) - 1)) {
+        while ($filas <= (($can * 2) - 1)) { 
             while ($columnas <= $can) {
                 if ($filas <= $can) {
                     if ($columnas <= ($can - $filas)) {
