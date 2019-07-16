@@ -1,0 +1,26 @@
+body {
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center top;
+  font-size: 1.2em;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin: auto;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+table td {
+  border: solid black;
+  padding: 10px;
+}

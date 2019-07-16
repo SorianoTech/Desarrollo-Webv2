@@ -87,6 +87,20 @@
     "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/array/encriptado.php",
     "descripcion": "Encripta una entrada de texto introduciendo el contenido en una array",
     "fecha": "01/07/2019"
+  },
+  {
+    "nombre": "Votaciones Dinámico",
+    "url_nombre": "projects/PHP/votaciones/index_dinamico.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/votaciones/index_dinamico.php",
+    "descripcion": "Votaciones dinámico creado con arrays a partir de inputs variables",
+    "fecha": "13/07/2019"
+  },
+  {
+    "nombre": "Liga",
+    "url_nombre": "projects/PHP/liga/liga.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/liga/liga.php",
+    "descripcion": "Programa que genera los partidos (todos contra todos) de los equipos introducidos por input de texto",
+    "fecha": "17/07/2019"
   }
 
 ]

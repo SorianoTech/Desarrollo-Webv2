@@ -73,6 +73,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - Para concatenar código html con código php dentro de las etiquetas de `<?php ?>` se utiliza el punto `.`
 - Las variables en PHP se definen con el símbolo `$` (\$variable) y no es necesario indicar el tipo de variable, php es capaz de identificar si es de tipo texto o numérica.
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
+- Con la etiqueta hiden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
 
 ### Enlaces
 

@@ -201,4 +201,20 @@ function randomNumber($digitos)
   
   return $devuelvenum;
 }
+
+// Función que ejecuta una función dentro de si misma guardando los valores
+// Imprimirá los valores de ida y de vuelta.
+// la variable estática ira arrastrando el valor y solo se ejecutara la primera vez que sea llamada, sin embargo la variable $valor cada vez que se ejecute tendra un valor que recorrerá a la inversa.
+function tabla($num){
+    static $contador = 1;
+    $valor = $contador;
+    $res = $contador * $num;
+    echo $num . ' X ' . $contador . ' = ' . $res . '';
+    ++$contador;
+    if($contador < 4){
+        tabla($num);
+    }
+    echo $valor . " " .  $contador ." la vida es muy bonita ";
+}
+        
 ?>

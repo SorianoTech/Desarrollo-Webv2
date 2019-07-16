@@ -7,5 +7,6 @@
 - [ ] Genera un tablero de ajedrez de 8x8 con 8 reinas situadas que no se maten.
 - [ ] Generar un sudoku.
 - [x] Generar un mensaje y encriptarlo.
-- [ ]Generar x cajas vacias para introducir los partidos políticos y la cantidad de votos.
+- [x]Generar x cajas vacías para introducir los partidos políticos y la cantidad de votos.
 - [ ] Mejorar el programa de sumas, permitiendo al usuario que ponga el resultado en una caja de text y que se compruebe si el resultado es el correcto o no.
+- [ ] Crear una Liga en PHP.Sistema de todos contra todos.
