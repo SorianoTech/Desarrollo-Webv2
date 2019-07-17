@@ -4,9 +4,9 @@
 - [x] Juego de bingo, crear cartones de boletos aleatorios, le pido por pantalla cuantos cartones quiero y me los pinta. 4x4 y nos números no se pueden repetir.
 - [x] Array con la descripción de las webs y las URL para el index de nuestra web.(Hecho con JSON).
 - [ ] Selector de imágenes, en el que elijo el álbum y pueda ver la foto y la descripción.
-- [ ] Genera un tablero de ajedrez de 8x8 con 8 reinas situadas que no se maten.
 - [ ] Generar un sudoku.
 - [x] Generar un mensaje y encriptarlo.
-- [x]Generar x cajas vacías para introducir los partidos políticos y la cantidad de votos.
+- [x] Generar x cajas vacías para introducir los partidos políticos y la cantidad de votos.
 - [ ] Mejorar el programa de sumas, permitiendo al usuario que ponga el resultado en una caja de text y que se compruebe si el resultado es el correcto o no.
-- [ ] Crear una Liga en PHP.Sistema de todos contra todos.
+- [x] Crear una Liga en PHP.Sistema de todos contra todos.
+- [ ] Genera un tablero de ajedrez de 8x8 con 8 reinas situadas que no se maten.

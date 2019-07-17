@@ -216,5 +216,21 @@ function tabla($num){
     }
     echo $valor . " " .  $contador ." la vida es muy bonita ";
 }
-        
+ 
+
+//dibuja una tabla de filas x columnas
+function dibujarTabla($filas, $columnas){
+echo "<table border='1'>"; 
+
+for($tr=1;$tr<=$filas;$tr++){ 
+
+    echo "<tr>"; 
+        for($td=1;$td<=$columnas;$td++){ 
+               echo "<td align='center'>".$tr*$td."</td>"; 
+        } 
+    echo "</tr>"; 
+} 
+
+echo "</table>";
+}
 ?>

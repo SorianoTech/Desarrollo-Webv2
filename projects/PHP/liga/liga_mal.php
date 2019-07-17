@@ -27,9 +27,9 @@
         if(!empty($_POST['cantidad'])){ 
           $cantidad = $_POST['cantidad'];
           if ($cantidad%2==0) {
-            echo 'Es par el número de equipos<br>';
+            echo "Es par el número de equipos<br>";
           } else {
-            echo 'El numero de equipos es impar<br>';
+            echo "El numero de equipos es impar<br>";
             $cantidad = $cantidad+1;} // sumamos 1 al numero impar de equipos. A este equipo loa llamaremos descanso
           echo '<p>Introduzca el nombre de los participantes</p>';
           echo '<form action="liga.php" method="post">';
@@ -41,64 +41,60 @@
           echo '</form>';
         }
 
-
-
 //$_POST es una array. Puedo recorrer cada array llamando a la array concreta array['nombres']
 if(!empty($_POST['equipo'])){ 
   //Guardo los equipos en la array nombres
-  //cuento los equipos para saber si tengo que añadir a descanso
-  if((count($_POST['equipo'])%2)!=0){
-    //Añado descanso al final de la array de equipos
-    $_POST['equipo'][]= 'Descanso';
-  }
+  $nombres=($_POST['equipo']);
 
-  $equipos=($_POST['equipo']);
-  $num_equipos=count(($_POST['equipo']));
-  $jornadas= count($equipos)-1;
-  $partidos = count($equipos)/2;
-   
-  //Creo los grupos
-  for ($i = 0; $i<(($num_equipos-1)/2); $i++) { // encaso de ser 6
-    $g1[$i] = $equipos[$i];
-    $g2[$i] = $equipos[$num_equipos-$i-1];
-  }
- 
-  for ($j = 1; $j<=$num_equipos-1; $j++) {//j son las jornadas, que seran el num_equipos -1
+  $partidos = array();
 
-   //anuncia los grupos
-    echo '<table><tr><td><b>Jornada '.$j.'</b></td></tr> ';
-    echo '<tr><td>';
-    $conta=0;
-    
-    foreach ($g1 as $equipo1) {
-    echo 'EQUIPO: '.$equipo1.'<BR>';
-    echo 'EQUIPO: '.$g2[$conta].'<BR>';
- 
-    //-----------
-    $conta=$conta+1;
-    echo '<br>'; 
-    }
-    echo '</td></tr><tr><td>';
-    echo '</td></tr>';
-    // Calculamos la siguiente jornada
-        $temp1 = $g2[0];
-        $temp2 = $g1[($num_equipos/2)-1];
-
-      for ($k = 0; $k<$num_equipos/2; $k++) {
-          if ($k == ($num_equipos/2)-1) {
-            $g1[1] = $temp1;
-            $g2[($num_equipos/2)-1] = $temp2;
-          } else {
-            $g1[($num_equipos/2)-1-$k] = $g1[($num_equipos/2)-1-$k-1];
-            $g2[$k] = $g2[$k+1];
-          }
-      }//-------------------
-    echo '</table>';
-    }
-
- 
-
+//Recorro la array de nombres con cada equipo
+foreach($nombres as $equipo){
+  //Recorro de nuevo nombres con contrincante
+	foreach($nombres as $contrincante){
+    //Si el valor de equipo es igual al de contrincante sigue, sino saldrá del foreach
+		/*if($equipo == $contrincante){
+			continue;
+    }*/
+    //Crea una array con el equipo y el contrincante.
+		$z = array($equipo,$contrincante);
+    sort($z);
+    //Creo la array match con los valores ordenados de z con los equipos y los contrincantes
+		if(!in_array($z,$partidos)){
+			$partidos[] = $z;
+		}
+	}
 }
+
+//Muestro la array $partidos para ver si están correctamente guardados los valores
+echo '<pre>';
+print_r($partidos);
+echo '</pre>';
+
+//Ejemplo de imprimir los elemenos de la array con un for y un for each.
+echo '<h2>Imprime con for + for each</h2>';
+for ($i=0; $i <count($partidos) ; $i++) {
+  foreach ($partidos[$i] as $key => $value) {
+    echo $value;
+  }
+   echo '<br>';
+}
+
+//Ejemplo de muestra todos los partidos utilizando foreach
+// Recorro los partidos y las claves de cada uno de ellos
+echo '<h2>Imprime con for each</h2>';
+ foreach($partidos as $key=>$part)
+ 	{
+     //Imprimo los partidos y añado uno a key para que no se muestre el partido 0
+   echo 'Partido '.++$key.': ';
+   //recorro la array part que contiene los equipos e imprimo los equipos y luego un salto de línea
+ 	foreach($part as $equip)
+ 		{
+ 		echo $equip ." ";
+ 		}
+ 	echo "<br>";
+   }
+  }
 ?>
       </div>
     </div>
