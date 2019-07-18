@@ -206,12 +206,12 @@ function randomNumber($digitos)
 // Imprimirá los valores de ida y de vuelta.
 // la variable estática ira arrastrando el valor y solo se ejecutara la primera vez que sea llamada, sin embargo la variable $valor cada vez que se ejecute tendra un valor que recorrerá a la inversa.
 function tabla($num){
-    static $contador = 1;
-    $valor = $contador;
+    static $contador = 1; //solo se ejecuta en la primera llamada el valor se ira arrastrando
+    $valor = $contador; // valor se quedara guardado en cada vuelta, en la vuelta 1 valdra 1, en la 2 valdra 2, en la 3 valdra 3, pero nos quedara en memoria los valores anteriores.
     $res = $contador * $num;
     echo $num . ' X ' . $contador . ' = ' . $res . '';
     ++$contador;
-    if($contador < 4){
+    if($contador < 4){  
         tabla($num);
     }
     echo $valor . " " .  $contador ." la vida es muy bonita ";

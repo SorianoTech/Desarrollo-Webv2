@@ -1,0 +1,27 @@
+table {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  margin: 50px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+table th {
+  background-color: black;
+}
+
+.row {
+  padding: 50px;
+  border: 20px solid black;
+  border-radius: 25px;
+
+}
+
+.container {
+  margin-top: 5%;
+  border-radius: 25px;
+}
