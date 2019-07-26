@@ -1,12 +1,13 @@
 <?php
     session_start();
     $usuarios = array(
-        array('nombre' => 'sergio', 'contrasena' => '1234'),
-        array('nombre' => 'victor', 'contrasena' => '1234'),
-        array('nombre' => 'david', 'contrasena' => '1234')
+        array('nombre' => 'Sergio', 'contrasena' => '1234'),
+        array('nombre' => 'Victor', 'contrasena' => '1234'),
+        array('nombre' => 'David', 'contrasena' => '1234')
     );
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nombre = $_POST['nombre'];
+        $nombre= ucfirst($nombre);
         $contrasena = $_POST['contrasena'];
         //Creamos una variable para verificar si el usuario con ese nombre y contraseña existe.
         $usuario_encontrado = false;
