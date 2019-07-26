@@ -23,9 +23,6 @@
                 <div class="subpage">
                     <p>Nombre:____________________     Apellido:____________________</p>
 
-
-
-
                     <?php
                     if ($opcion == 1) { //caso suma
                         echo '<h1>Sumas de ' . $number . ' Dígitos: </h1>';

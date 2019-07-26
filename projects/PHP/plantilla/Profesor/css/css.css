@@ -1,0 +1,13 @@
+header{
+	height: 150px;
+	width: 80%;
+	margin: auto;;
+	background-color: #000000; 
+}
+
+aside{
+	float: right;
+	width: 20%;
+	background: #111111;
+	min-height: 300px;
+}

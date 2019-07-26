@@ -6,6 +6,7 @@ La finalidad de esa aplicación es crear una web app de búsqueda de empleo util
 
 - [ ] Recopilar las principales paginas de búsqueda de empleo.
 - [ ] Identificar los elementos de búsqueda, como tecnologías, localización. 
+- [ ] Identificar a las empresas que se dedican a reclutar.
 
 ## Webs de búsqueda de empleo
 
@@ -13,13 +14,14 @@ Recopilación de API's:
 
 - [Infojob](https://developer.infojobs.net/test-console/console.xhtml)
 - [Indeed](https://opensource.indeedeng.io/api-documentation/)
-
-Recopilacion de Webs:
+-
+Recopilación de Webs:
 
 Español
-- [Empleate Gob(Portal de empleo)](https://www.empleate.gob.es/empleo/#/)
+- [Empleate Gob(Portal de empleo](https://www.empleate.gob.es/empleo/#/)
 - [Empleo Madrid](http://www.comunidad.madrid/servicios/empleo/busqueda-empleo)
 
-
 Ingles
-[Ziprecruiter](https://www.ziprecruiter.com/) 
+- [Ziprecruiter](https://www.ziprecruiter.com/) 
+- [Glassdoor](https://www.glassdoor.com/index.htm) 
+- [UpWork](https://www.upwork.com/)

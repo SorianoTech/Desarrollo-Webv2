@@ -8,6 +8,10 @@ El objetivo principal es **darse a conocer**.
 
 Es necesario disponer de un blog para que el contenido provenga de nuestra página y el robot simplemente genere enlaces con el titulo de los post en las redes sociales. 
 
+## Finalidad o beneficios
+
+
+
 ## Redes sociales
 
 Twitter

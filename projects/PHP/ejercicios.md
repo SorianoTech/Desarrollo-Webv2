@@ -10,3 +10,6 @@
 - [ ] Mejorar el programa de sumas, permitiendo al usuario que ponga el resultado en una caja de text y que se compruebe si el resultado es el correcto o no.
 - [x] Crear una Liga en PHP.Sistema de todos contra todos.
 - [ ] Genera un tablero de ajedrez de 8x8 con 8 reinas situadas que no se maten.
+- [ ] Usuario y contraseña que solo se pueda ver si accedo con mi usuario. Simular un array de usuarios y contraseñas. Si el usuario esta, le generamos una cookie.
+- [ ] Crear una lista de la compra que me guarde la sesion en una cookie.
+- [ ] Generar una lista de tareas generando un fichero txt o json que se almacene en el servidor.Las tareas se tiene que poder asignar a un usuario y solo las puede dar por finalizadas ese usuario. Convertir la array a un json y luego pasar a array.
