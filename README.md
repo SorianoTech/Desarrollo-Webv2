@@ -7,9 +7,10 @@
   - [CSS](#css)
     - [Enlaces](#enlaces-1)
     - [Librerías de estilos](#librer%c3%adas-de-estilos)
+    - [Herramientas](#herramientas)
   - [JS](#js)
     - [Enlaces](#enlaces-2)
-    - [Framework](#framework)
+    - [Librerias](#librerias-1)
     - [Enlaces](#enlaces-3)
   - [PHP](#php)
     - [Enlaces](#enlaces-4)
@@ -76,6 +77,13 @@ Listado de elementos vistos:
 - [PureCSS](https://purecss.io/)
 - [Inter Fuentes](https://rsms.me/inter/samples/)
 
+
+### Herramientas
+
+https://colourco.de/
+
+http://animista.net/
+
 ---
 
 ## JS
@@ -86,15 +94,17 @@ Javascript
 
 - [CodePen](https://codepen.io)
 
-### Framework
+### Librerias
 
 [Jquery UI](https://jqueryui.com/)
+[NPM](https://www.npmjs.com/)
 
 ### Enlaces
 
 - [Webpack](https://webpack.js.org/)
 - [Browserft](http://browserify.org/)
 - [Vue](https://vuejs.org/)
+- Noder
 
 ## PHP
 

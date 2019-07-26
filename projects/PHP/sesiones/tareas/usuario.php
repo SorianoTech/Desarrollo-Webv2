@@ -20,6 +20,6 @@
     <!--APP Tareas-->
     <?include('tareas.php');?>
 
-        <p> <a href="cerrar_sesion.php"> Cerrar sesión </a> </p>
+    
     </body>
 </html>

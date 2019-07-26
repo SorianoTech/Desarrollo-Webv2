@@ -11,7 +11,7 @@
         //Creamos una variable para verificar si el usuario con ese nombre y contraseña existe.
         $usuario_encontrado = false;
         foreach($usuarios as $item){
-            //Si encuentra al usuario con ese nombre y contraseña sete la variable $usuario_encontrado a true y rompe el bucle para no seguir buscando.
+            //Si encuentra al usuario con ese nombre y contraseña a la variable $usuario_encontrado a true y rompe el bucle para no seguir buscando.
             if($nombre == $item['nombre'] and $contrasena == $item['contrasena']){
                 $usuario_encontrado = true;
                 break;
@@ -53,8 +53,8 @@
             <div class="center">
             <h2>Acceso</h2>
             <form method="post" action="index.php">
-            <input type="text" name="nombre" id="nombre" required="required" >
-            <input type="password" name="contrasena" id="contrasena" required="required" >
+            <input type="text" name="nombre" id="nombre" placeholder="Usuario" required="required" >
+            <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required="required" >
             <input type="submit" value="Enviar" />
                 <h2>&nbsp;</h2>
             </form>
