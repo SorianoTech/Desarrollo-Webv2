@@ -1,0 +1,10 @@
+{
+    "categorias":
+        [
+            {"categoria":"html","id":"1"},
+            {"categoria":"php","id":"2"},
+            {"categoria":"css","id":"3"},
+            {"categoria":"marketing","id":"4"},
+            {"categoria":"js","id":"5"}
+        ]
+}

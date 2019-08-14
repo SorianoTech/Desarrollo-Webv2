@@ -1,12 +1,9 @@
 <?php
     session_start();
-    $usuarios = array(
-        array('nombre' => 'Sergio', 'contrasena' => '1234'),
-        array('nombre' => 'Victor', 'contrasena' => '1234'),
-        array('nombre' => 'David', 'contrasena' => '1234')
-    );
+    require_once('bbdd.php');
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nombre = $_POST['nombre'];
+        //Función para cambiar la primera letra a mayúscula.
         $nombre= ucfirst($nombre);
         $contrasena = $_POST['contrasena'];
         //Creamos una variable para verificar si el usuario con ese nombre y contraseña existe.
@@ -34,9 +31,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        
         <title> Logueo </title>
     </head>
+    
     <body>
         <?php if(isset($error_login)): ?>
             <span style="color: #f00;"> El usuario o la contraseña son incorrectos. </span>
@@ -50,18 +51,16 @@
         </form>-->
         <div class="container" onclick="onclick">
             <div class="top"></div>
-            <div class="bottom"></div>
-            <div class="center">
-            <h2>Acceso</h2>
-            <form method="post" action="index.php">
-            <input type="text" name="nombre" id="nombre" placeholder="Usuario" required="required" >
-            <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required="required" >
-            <input type="submit" value="Enviar" />
-                <h2>&nbsp;</h2>
-            </form>
-    </div>
-  </div>
-
-
+                <div class="bottom"></div>
+                    <div class="center">
+                        <h2>Acceso</h2>
+                        <form method="post" action="index.php">
+                            <input type="text" name="nombre" id="nombre" placeholder="Usuario" required="required" autofocus="" >
+                            <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required="required" >
+                            <input type="submit" value="Enviar" />
+                                <h2>&nbsp;</h2>
+                        </form>
+                    </div>
+        </div>
     </body>
 </html>

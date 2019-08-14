@@ -11,7 +11,7 @@
         //Creamos una variable para verificar si el usuario con ese nombre y contraseña existe.
         $usuario_encontrado = false;
         foreach($usuarios as $item){
-            //Si encuentra al usuario con ese nombre y contraseña sete la variable $usuario_encontrado a true y rompe el bucle para no seguir buscando.
+            //Si encuentra al usuario con ese nombre y contraseña seteo la variable $usuario_encontrado a true y rompe el bucle para no seguir buscando.
             if($nombre == $item['nombre'] and $contrasena == $item['contrasena']){
                 $usuario_encontrado = true;
                 break;

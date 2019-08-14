@@ -1,0 +1,27 @@
+{
+  "tareas": [{
+    "id": 89073508,
+    "tarea": "Cerrar la grifo",
+    "usuario": 3,
+    "asignado": 1,
+    "estado": 1
+  }, {
+    "id": 33598599,
+    "tarea": "Cerrar la grifo",
+    "usuario": 1,
+    "asignado": 3,
+    "estado": 1
+  }, {
+    "id": 53305832,
+    "tarea": "nueva",
+    "usuario": 1,
+    "asignado": 3,
+    "estado": 0
+  }, {
+    "id": 17362206,
+    "tarea": "IR A ",
+    "usuario": 1,
+    "asignado": 2,
+    "estado": 0
+  }]
+}

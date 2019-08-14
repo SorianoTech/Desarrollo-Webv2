@@ -39,8 +39,8 @@ foreach ($json_data as $clave => $valor) {
   //Imprime los elementos de la tabla
   echo '
   <tr>
-    <td><a href='.$valor['url_nombre'].'>'.$valor['nombre'].'</a></td>
-    <td><a href="'.$valor['url_codigo'].'">Aquí</a></td>
+    <td><a href="'.$valor['url_nombre'].'" target="_blank">'.$valor['nombre'].'</a></td>
+    <td><a href="'.$valor['url_codigo'].'" target="_blank">Aquíaaa</a></td>
     <td>'.$valor['descripcion'].'</td>
     <td>'.$valor['fecha'].'</td>
   </tr>';

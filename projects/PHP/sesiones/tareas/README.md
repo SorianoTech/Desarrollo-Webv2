@@ -6,7 +6,8 @@ Generar una lista de tareas generando un fichero txt o json que se almacene en e
 
 - [ ] Tiene que ser posible poder asignar una tarea a un usuario, y solo puede marcarla como finalizada el usuario.
 - [ ] Tratar los datos con ficheros json.
-  
+- [ ] Crear un JSON para identificar las tareas.
+- [ ] Cambiar las funciones de sistema de ficheros a **file_get_contents** y **file_put_contents**.
 
 ## Tareas
 

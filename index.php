@@ -111,8 +111,8 @@
               //Imprime los elementos de la tabla generados por el fichero projects/projects.json
               echo '
               <tr>
-                <td scope="row"><a href='.$valor['url_nombre'].'>'.$valor['nombre'].'</a></td>
-                <td><a href="'.$valor['url_codigo'].'">Aquí</a></td>
+                <td scope="row"><a href='.$valor['url_nombre'].' target="_blank">'.$valor['nombre'].'</a></td>
+                <td><a href="'.$valor['url_codigo'].'" target="_blank">Aquí</a></td>
                 <td>'.$valor['descripcion'].'</td>
                 <td>'.$valor['fecha'].'</td>
               </tr>';

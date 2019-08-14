@@ -4,6 +4,7 @@
   - [HTML](#html)
     - [Enlaces](#enlaces)
     - [Librerias](#librerias)
+    - [Framework](#framework)
   - [CSS](#css)
     - [Enlaces](#enlaces-1)
     - [Librerías de estilos](#librer%c3%adas-de-estilos)
@@ -12,9 +13,11 @@
     - [Enlaces](#enlaces-2)
     - [Librerias](#librerias-1)
     - [Enlaces](#enlaces-3)
+    - [Editor de texto](#editor-de-texto)
   - [PHP](#php)
     - [Enlaces](#enlaces-4)
     - [Frameworks](#frameworks)
+    - [Librerias](#librerias-2)
     - [Libros](#libros)
   - [Monetizando](#monetizando)
     - [Enlaces](#enlaces-5)
@@ -43,12 +46,19 @@ Listado de elementos vistos:
 - [Boilerplate HTML5](https://html5boilerplate.com/)
 - [Plantillas Skeleton](http://getskeleton.com/)
 - [Cheatsheet](https://htmlcheatsheet.com/)
+- [Templates HTML5](https://html5up.net/)
+- [Admin Backend Templates](https://www.bootstrapdash.com/free-bootstrap-admin-templates/)
+  
 
 ### Librerias
 
 - [Bootstrap](https://getbootstrap.com/docs/)
 - [Foundation](https://foundation.zurb.com/)
 - [Materialize](https://materializecss.com/)
+
+### Framework
+
+[Hugo](https://gohugo.io/)
 
 ---
 
@@ -92,7 +102,7 @@ Javascript
 
 ### Enlaces
 
-- [CodePen](https://codepen.io)
+- [CodePen](https://codepen.io) : web con ejemplos de efectos en javascript.
 
 ### Librerias
 
@@ -104,7 +114,12 @@ Javascript
 - [Webpack](https://webpack.js.org/)
 - [Browserft](http://browserify.org/)
 - [Vue](https://vuejs.org/)
-- Noder
+- [Node](https://nodejs.org/en/)
+
+### Editor de texto
+
+- [Summernote](https://summernote.org/)
+- [Quill](https://quilljs.com/)
 
 ## PHP
 
@@ -132,11 +147,18 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - [Pakage Manager](https://packagist.org/)
 - [La manera correcta](https://phptherightway.com/)
 - [Cursos gratuitos Laravel PHP](https://laracasts.com/)
+  
 
 ### Frameworks
 
 - [Synfony](https://symfony.es/)
 - [Laravel](https://laravel.com/docs/5.8/installation)
+- [CakePHP](https://cakephp.org/)
+
+### Librerias
+
+[ReactPHP](https://reactphp.org/) 
+[Parsedown](https://parsedown.org/) - libreria para parsear ficheros Markdown.
 
 ### Libros
 

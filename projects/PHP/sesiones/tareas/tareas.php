@@ -32,5 +32,7 @@
     <p> <a href="cerrar_sesion.php"> Cerrar sesión <i class="fas fa-sign-out-alt"></i> </a></p>
   </div>
 
+  
+
 </body>
 </html>
