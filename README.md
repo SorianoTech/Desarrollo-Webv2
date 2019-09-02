@@ -15,15 +15,19 @@
     - [Enlaces](#enlaces-3)
     - [Editor de texto](#editor-de-texto)
   - [PHP](#php)
+    - [Librerias](#librerias-2)
     - [Enlaces](#enlaces-4)
     - [Frameworks](#frameworks)
-    - [Librerias](#librerias-2)
+    - [Librerias](#librerias-3)
     - [Libros](#libros)
-  - [Monetizando](#monetizando)
+  - [Bases de Datos](#bases-de-datos)
     - [Enlaces](#enlaces-5)
+  - [Monetizando](#monetizando)
+    - [Enlaces](#enlaces-6)
   - [Serverless](#serverless)
 - [Awesome Links](#awesome-links)
 - [Comunidades de programadores](#comunidades-de-programadores)
+- [Alojamiento - Hosting](#alojamiento---hosting)
 
 Este repositorio es una guía sobre los conceptos y herramientas que he ido aprendiendo en el curso de desarroll de aplicaciones web **IFCD0210**, puedes encontrar un resumen teórico [aquí](http://sorianotech.github.io).
 
@@ -48,7 +52,6 @@ Listado de elementos vistos:
 - [Cheatsheet](https://htmlcheatsheet.com/)
 - [Templates HTML5](https://html5up.net/)
 - [Admin Backend Templates](https://www.bootstrapdash.com/free-bootstrap-admin-templates/)
-  
 
 ### Librerias
 
@@ -87,7 +90,6 @@ Listado de elementos vistos:
 - [PureCSS](https://purecss.io/)
 - [Inter Fuentes](https://rsms.me/inter/samples/)
 
-
 ### Herramientas
 
 https://colourco.de/
@@ -125,7 +127,7 @@ Javascript
 
 - [Conceptos Básicos](conceptos_basicos_php.pdf)
 
-El lenguaje que nos permite crear contenido desde el lado de servidor para crear contenido en la lado del cliente.
+El lenguaje que nos permite crear contenido desde el lado de servidor para mostrar contenido en la lado del cliente.
 
 - Hay que tener en cuenta que el contenido que en HTML utilizada comillas dobles `"`, en para combinar PHP y HTML tenemos que utilizar comillas simples `'`.
 - En PHP podemos definir el limite de ejecuciones que realice un bucle, asi impedimos que se creen bucles infinitos. Esta configuración se lleva a cabo en apache.
@@ -134,10 +136,15 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - Las variables en PHP se definen con el símbolo `$` (\$variable) y no es necesario indicar el tipo de variable, php es capaz de identificar si es de tipo texto o numérica.
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 - Con la etiqueta hidden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
-- Cookies vs Sesiones. Cookies se almacenan en el cliente, las sesiones de almacenan en el servidor.
-- [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario. 
-- [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una funcion repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
 
+### Librerias
+
+[ReactPHP](https://reactphp.org/)
+[Parsedown](https://parsedown.org/) - libreria para parsear ficheros
+
+- Cookies vs Sesiones. Cookies se almacenan en el cliente, las sesiones de almacenan en el servidor.
+- [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
+- [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
 
 ### Enlaces
 
@@ -147,7 +154,6 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - [Pakage Manager](https://packagist.org/)
 - [La manera correcta](https://phptherightway.com/)
 - [Cursos gratuitos Laravel PHP](https://laracasts.com/)
-  
 
 ### Frameworks
 
@@ -157,12 +163,23 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 
 ### Librerias
 
-[ReactPHP](https://reactphp.org/) 
+[ReactPHP](https://reactphp.org/)
 [Parsedown](https://parsedown.org/) - libreria para parsear ficheros Markdown.
 
 ### Libros
 
 [PHP Programming (O'Reilly)](https://docstore.mik.ua/orelly/webprog/php/index.htm)
+
+## Bases de Datos
+
+- Gestión de base de datos con PHPMyAdmin
+- Conexión a la base de datos y consultas desde PHP
+- [Uso de la funcion fetch_assoc para transformar querys en arrays](https://www.php.net/manual/es/mysqli-result.fetch-assoc.php)
+
+
+### Enlaces
+
+https://www.php.net/manual/es/book.mysqli.php
 
 ## Monetizando
 
@@ -185,3 +202,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para crear
 - [La web del programador](https://www.lawebdelprogramador.com/)
 - [Codesandbox](https://codesandbox.io)
 - [Codepen](https://codepen.io/)
+
+# Alojamiento - Hosting
+
+<https://clouding.io/>

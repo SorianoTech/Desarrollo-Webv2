@@ -122,6 +122,13 @@
     "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/PHP/sesiones/tareas/index.php",
     "descripcion": "Uso de Sesiones- Aplicación para crear una lista tareas.",
     "fecha": "25/07/2019"
+  },
+  {
+    "nombre": "Blog",
+    "url_nombre": "projects/blog/admin/Stellar/pages/private/index.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/blog/admin/Stellar/pages/private/index.php",
+    "descripcion": "Blog con control de acceso - Area privada y área pública.",
+    "fecha": "29/07/2019"
   }
 
 ]
