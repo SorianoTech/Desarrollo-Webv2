@@ -127,8 +127,14 @@
     "nombre": "Blog",
     "url_nombre": "projects/blog/admin/Stellar/pages/private/index.php",
     "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/blog/admin/Stellar/pages/private/index.php",
-    "descripcion": "Blog con control de acceso - Area privada y área pública.",
+    "descripcion": "Blog con control de acceso - Área privada y área pública.",
     "fecha": "29/07/2019"
+  },
+  {
+    "nombre": "Control de Empleados",
+    "url_nombre": "http://35.180.100.249/~sergio/bbdd/horarios/",
+    "url_codigo": "#",
+    "descripcion": "Aplicación para la gestión de empleados.",
+    "fecha": "05/09/2019"
   }
-
 ]
