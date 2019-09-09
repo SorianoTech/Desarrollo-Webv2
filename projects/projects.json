@@ -132,7 +132,7 @@
   },
   {
     "nombre": "Control de Empleados",
-    "url_nombre": "http://35.180.100.249/~sergio/bbdd/horarios/",
+    "url_nombre": "http://35.180.252.132/~sergio/bbdd/horarios/",
     "url_codigo": "#",
     "descripcion": "Aplicación para la gestión de empleados.",
     "fecha": "05/09/2019"
