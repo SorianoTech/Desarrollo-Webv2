@@ -1,37 +1,8 @@
 # Curso de desarrollo web
 
-- [Curso de desarrollo web](#curso-de-desarrollo-web)
-  - [HTML](#html)
-    - [Enlaces](#enlaces)
-    - [Librerias](#librerias)
-    - [Framework](#framework)
-  - [CSS](#css)
-    - [Enlaces](#enlaces-1)
-    - [Librerías de estilos](#librer%c3%adas-de-estilos)
-    - [Herramientas](#herramientas)
-  - [JS](#js)
-    - [Enlaces](#enlaces-2)
-    - [Librerias](#librerias-1)
-    - [Enlaces](#enlaces-3)
-    - [Editor de texto](#editor-de-texto)
-  - [PHP](#php)
-    - [Librerias](#librerias-2)
-    - [Enlaces](#enlaces-4)
-    - [Frameworks](#frameworks)
-    - [Librerias](#librerias-3)
-    - [Libros](#libros)
-  - [Bases de Datos](#bases-de-datos)
-    - [Enlaces](#enlaces-5)
-  - [Monetizando](#monetizando)
-    - [Enlaces](#enlaces-6)
-  - [Serverless](#serverless)
-- [Awesome Links](#awesome-links)
-- [Comunidades de programadores](#comunidades-de-programadores)
-- [Alojamiento - Hosting](#alojamiento---hosting)
+Este repositorio es una guía sobre los conceptos y herramientas que he ido aprendiendo en el curso de desarrollo de aplicaciones web **IFCD0210**, puedes encontrar un resumen teórico sobre java [aquí](http://sorianotech.github.io).
 
-Este repositorio es una guía sobre los conceptos y herramientas que he ido aprendiendo en el curso de desarroll de aplicaciones web **IFCD0210**, puedes encontrar un resumen teórico [aquí](http://sorianotech.github.io).
-
-Una vez aprendidos estos conocimientos teóricos hemos realizado prácticas utilizando el stack de lenguajes de programación web.
+Una vez aprendidos estos conocimientos teóricos hemos realizado prácticas durante 5 meses utilizando el stack (LAMP) y los siguientes lenguajes web.
 
 - [`HTML`](https://www.w3.org/TR/?tag=html)
 - [`CSS`](https://www.w3.org/TR/?tag=css)
@@ -40,12 +11,12 @@ Una vez aprendidos estos conocimientos teóricos hemos realizado prácticas util
 
 ## [HTML](html.md)
 
-Listado de elementos vistos:
+Conceptos estudiados:
 
 - Elementos fundamentales necesarios.
 - Estructura de etiquetas en HTML5.
 
-### Enlaces
+### Enlaces HTML
 
 - [Boilerplate HTML5](https://html5boilerplate.com/)
 - [Plantillas Skeleton](http://getskeleton.com/)
@@ -53,15 +24,15 @@ Listado de elementos vistos:
 - [Templates HTML5](https://html5up.net/)
 - [Admin Backend Templates](https://www.bootstrapdash.com/free-bootstrap-admin-templates/)
 
-### Librerias
+### Librerias HTML
 
 - [Bootstrap](https://getbootstrap.com/docs/)
 - [Foundation](https://foundation.zurb.com/)
 - [Materialize](https://materializecss.com/)
 
-### Framework
+### Framework HTML
 
-[Hugo](https://gohugo.io/)
+[Hugo - Generador de sitios estáticos](https://gohugo.io/)
 
 ---
 
@@ -80,7 +51,7 @@ Listado de elementos vistos:
 
 - Ejemplo de selectores de pseudoclases [aquí](http://byverdu.es/css3-como-usar-los-selectores-de-las-pseudo-classes-nth-child-nth-of-type-y-not/).
 
-### Enlaces
+### Enlaces CSS
 
 - [CSS Mozilla](https://developer.mozilla.org/es/docs/Web/CSS)
 - [W3School](https://www.w3schools.com/css/default.asp)
@@ -90,38 +61,36 @@ Listado de elementos vistos:
 - [PureCSS](https://purecss.io/)
 - [Inter Fuentes](https://rsms.me/inter/samples/)
 
-### Herramientas
+### Herramientas CSS
 
-https://colourco.de/
-
-http://animista.net/
+- https://colourco.de/
+- http://animista.net/
 
 ---
 
-## JS
+## JavaSscript
 
-Javascript
+Lenguaje orientado a eventos
 
-### Enlaces
-
-- [CodePen](https://codepen.io) : web con ejemplos de efectos en javascript.
-
-### Librerias
+### Librerias Javascript
 
 [Jquery UI](https://jqueryui.com/)
-[NPM](https://www.npmjs.com/)
 
-### Enlaces
+### Enlaces JavaScript
 
 - [Webpack](https://webpack.js.org/)
 - [Browserft](http://browserify.org/)
 - [Vue](https://vuejs.org/)
 - [Node](https://nodejs.org/en/)
+- [NPM - Gestor de paquetes](https://www.npmjs.com/)
 
-### Editor de texto
+
+### Editor de texto en javascript
 
 - [Summernote](https://summernote.org/)
 - [Quill](https://quilljs.com/)
+
+---
 
 ## PHP
 
@@ -137,7 +106,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 - Con la etiqueta hidden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
 
-### Librerias
+### Librerias PHP
 
 [ReactPHP](https://reactphp.org/)
 [Parsedown](https://parsedown.org/) - libreria para parsear ficheros
@@ -146,7 +115,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
 - [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
 
-### Enlaces
+### Enlaces PHP
 
 - [Documentación oficial PHP](https://www.php.net/manual/es/)
 - [Sintaxis básica PHP](https://www.php.net/manual/es/language.basic-syntax.phpmode.php)
@@ -155,35 +124,26 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [La manera correcta](https://phptherightway.com/)
 - [Cursos gratuitos Laravel PHP](https://laracasts.com/)
 
-### Frameworks
+### Frameworks PHP
 
 - [Synfony](https://symfony.es/)
 - [Laravel](https://laravel.com/docs/5.8/installation)
 - [CakePHP](https://cakephp.org/)
 
-### Librerias
-
-[ReactPHP](https://reactphp.org/)
-[Parsedown](https://parsedown.org/) - libreria para parsear ficheros Markdown.
-
-### Libros
+### Libros PHP
 
 [PHP Programming (O'Reilly)](https://docstore.mik.ua/orelly/webprog/php/index.htm)
 
-## Bases de Datos
+----
+
+## Bases de Datos SQL
 
 - Gestión de base de datos con PHPMyAdmin
 - Conexión a la base de datos y consultas desde PHP
 - [Uso de la funcion fetch_assoc para transformar querys en arrays](https://www.php.net/manual/es/mysqli-result.fetch-assoc.php)
-
-
-### Enlaces
-
-https://www.php.net/manual/es/book.mysqli.php
+ - [Funcion mysqli](https://www.php.net/manual/es/book.mysqli.php)
 
 ## Monetizando
-
-### Enlaces
 
 - Google adsense
 - Google adwords
@@ -193,16 +153,24 @@ https://www.php.net/manual/es/book.mysqli.php
 - [Netifly](https://www.netlify.com/)
 - [Github Pages](https://pages.github.com/)
 
-# Awesome Links
+## Awesome Links
 
 - [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 
-# Comunidades de programadores
+## Comunidades de programadores
 
 - [La web del programador](https://www.lawebdelprogramador.com/)
 - [Codesandbox](https://codesandbox.io)
 - [Codepen](https://codepen.io/)
 
-# Alojamiento - Hosting
+## Alojamiento - Hosting
 
 <https://clouding.io/>
+<DigitalOcean>
+<OVH-com>
+<Clouding.io>
+
+
+## Documentación
+
+[Documentación para desarrolladores](https://devdocs.io)
