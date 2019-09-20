@@ -136,5 +136,12 @@
     "url_codigo": "#",
     "descripcion": "Aplicación para la gestión de empleados.",
     "fecha": "05/09/2019"
+  },
+  {
+    "nombre": "Gestión de proyectos",
+    "url_nombre": "http://35.180.252.132/~sergio/bbdd/historico_proyectos/",
+    "url_codigo": "#",
+    "descripcion": "Aplicación para llevar un control de los log y alertas de proyectos web.",
+    "fecha": "20/09/2019"
   }
 ]
