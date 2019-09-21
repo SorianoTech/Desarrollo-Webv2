@@ -12,13 +12,13 @@ Una vez aprendidos estos conocimientos teóricos hemos realizado prácticas dura
 
 Para realizar los diseños de aplicaciones web seguiremos el siguiente fases:
 
-1 .**Diseño**: consiste en realizar un dibujo visual de cuales son los elementos que van a componer la aplicación. Intentaremos dibujar los máximos detalles posibles, puedes hacer el dibujo en un simple cuaderno.También tendremos que describir todas las funcionalidades, por ejemplo un buscador.
+1. **Diseño**: consiste en realizar un dibujo visual de cuales son los elementos que van a componer la aplicación. Intentaremos dibujar los máximos detalles posibles, puedes hacer el dibujo en un simple cuaderno.También tendremos que describir todas las funcionalidades, por ejemplo un buscador.
 
-2.**Creación de la base de datos**: esta fase consiste en definir todos los datos que necesitamos guardar así de como todas las relaciones posibles entre las tablas. Por ejemplo, usuarios, password, categorias, fechas, etc. 
+2. **Creación de la base de datos**: esta fase consiste en definir todos los datos que necesitamos guardar así de como todas las relaciones posibles entre las tablas. Por ejemplo, usuarios, password, categorias, fechas, etc. 
    
-3.**Maquetación**: En esta fase colocaremos todos los elementos utilizando el dibujo utilizando las etiquetas de HTML. 
+3. **Maquetación**: En esta fase colocaremos todos los elementos utilizando el dibujo utilizando las etiquetas de HTML. 
    
-4.**Programación**: consistirá en llevar a cabo toda la lógica y contenido dinámico utilizando php.
+4. **Programación**: consistirá en llevar a cabo toda la lógica y contenido dinámico utilizando php.
 
 ## 1.1. [HTML](html.md)
 
