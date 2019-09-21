@@ -125,8 +125,8 @@
   },
   {
     "nombre": "Blog",
-    "url_nombre": "projects/blog/admin/Stellar/pages/private/index.php",
-    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/blob/master/projects/blog/admin/Stellar/pages/private/index.php",
+    "url_nombre": "projects/blog/pages/private/index.php",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/blog",
     "descripcion": "Blog con control de acceso - Área privada y área pública.",
     "fecha": "29/07/2019"
   },
