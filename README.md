@@ -1,4 +1,4 @@
-# Curso de desarrollo web
+# 1. Curso de desarrollo web
 
 Este repositorio es una guía sobre los conceptos y herramientas que he ido aprendiendo en el curso de desarrollo de aplicaciones web **IFCD0210**, puedes encontrar un resumen teórico sobre java [aquí](http://sorianotech.github.io).
 
@@ -9,14 +9,22 @@ Una vez aprendidos estos conocimientos teóricos hemos realizado prácticas dura
 - [`JS`](https://en.wikipedia.org/wiki/ECMAScript)
 - [`PHP`](https://www.php.net/)
 
-## [HTML](html.md)
+
+Para realizar los diseños de aplicaciones web seguiremos el siguiente fases:
+
+1 .**Diseño**: consiste en realizar un dibujo visual de cuales son los elementos que van a componer la aplicación. Intentaremos dibujar los máximos detalles posibles, puedes hacer el dibujo en un simple cuaderno.También tendremos que describir todas las funcionalidades, por ejemplo un buscador.
+2. **Creación de la base de datos**: esta fase consiste en definir todos los datos que necesitamos guardar así de como todas las relaciones posibles entre las tablas. Por ejemplo, usuarios, password, categorias, fechas, etc. 
+3. **Maquetación**: En esta fase colocaremos todos los elementos utilizando el dibujo utilizando las etiquetas de HTML. 
+4. **Programación**: consistirá en llevar a cabo toda la lógica y contenido dinámico utilizando php.
+
+## 1.1. [HTML](html.md)
 
 Conceptos estudiados:
 
 - Elementos fundamentales necesarios.
 - Estructura de etiquetas en HTML5.
 
-### Enlaces HTML
+### 1.1.1. Enlaces HTML
 
 - [Boilerplate HTML5](https://html5boilerplate.com/)
 - [Plantillas Skeleton](http://getskeleton.com/)
@@ -24,19 +32,21 @@ Conceptos estudiados:
 - [Templates HTML5](https://html5up.net/)
 - [Admin Backend Templates](https://www.bootstrapdash.com/free-bootstrap-admin-templates/)
 
-### Librerias HTML
+### 1.1.2. Librerias HTML
 
 - [Bootstrap](https://getbootstrap.com/docs/)
+  - [Plantilla Stellar](https://github.com/BootstrapDash/Stellar)
+  - [Plantillas Gratis](https://startbootstrap.com/themes/)
 - [Foundation](https://foundation.zurb.com/)
 - [Materialize](https://materializecss.com/)
 
-### Framework HTML
+### 1.1.3. Framework HTML
 
 [Hugo - Generador de sitios estáticos](https://gohugo.io/)
 
 ---
 
-## CSS
+## 1.2. CSS
 
 **Menus**: para crear menus utilizamos la propiedad [display](https://www.w3schools.com/css/css_inline-block.asp) con listas.
 
@@ -51,62 +61,62 @@ Conceptos estudiados:
 
 - Ejemplo de selectores de pseudoclases [aquí](http://byverdu.es/css3-como-usar-los-selectores-de-las-pseudo-classes-nth-child-nth-of-type-y-not/).
 
-### Enlaces CSS
+### 1.2.1. Enlaces CSS
 
 - [CSS Mozilla](https://developer.mozilla.org/es/docs/Web/CSS)
 - [W3School](https://www.w3schools.com/css/default.asp)
 
-### Librerías de estilos
+### 1.2.2. Librerías de estilos
 
 - [PureCSS](https://purecss.io/)
 - [Inter Fuentes](https://rsms.me/inter/samples/)
 
-### Herramientas CSS
+### 1.2.3. Herramientas CSS
 
 - https://colourco.de/
 - http://animista.net/
 
 ---
 
-## JavaSscript
+## 1.3. JavaScript
 
 Lenguaje orientado a eventos
 
-### Librerias Javascript
+### 1.3.1. Librerias Javascript
 
 [Jquery UI](https://jqueryui.com/)
 
-### Enlaces JavaScript
+### 1.3.2. Enlaces JavaScript
 
 - [Webpack](https://webpack.js.org/)
 - [Browserft](http://browserify.org/)
 - [Vue](https://vuejs.org/)
-- [Node](https://nodejs.org/en/)
+- [Node](https://nodejs.org/en/) - Servidor, equivaldría a PHP
 - [NPM - Gestor de paquetes](https://www.npmjs.com/)
 
 
-### Editor de texto en javascript
+### 1.3.3. Editor de texto en javascript
 
 - [Summernote](https://summernote.org/)
 - [Quill](https://quilljs.com/)
 
 ---
 
-## PHP
+## 1.4. PHP
 
 - [Conceptos Básicos](conceptos_basicos_php.pdf)
 
 El lenguaje que nos permite crear contenido desde el lado de servidor para mostrar contenido en la lado del cliente.
 
 - Hay que tener en cuenta que el contenido que en HTML utilizada comillas dobles `"`, en para combinar PHP y HTML tenemos que utilizar comillas simples `'`.
-- En PHP podemos definir el limite de ejecuciones que realice un bucle, asi impedimos que se creen bucles infinitos. Esta configuración se lleva a cabo en apache.
+- En PHP podemos definir el límite de ejecuciones que realice un bucle, asi impedimos que se creen bucles infinitos. Esta configuración se lleva a cabo en apache.
 - Definición de variables.
 - Para concatenar código html con código php dentro de las etiquetas de `<?php ?>` se utiliza el punto `.`
 - Las variables en PHP se definen con el símbolo `$` (\$variable) y no es necesario indicar el tipo de variable, php es capaz de identificar si es de tipo texto o numérica.
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 - Con la etiqueta hidden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
 
-### Librerias PHP
+### 1.4.1. Librerias PHP
 
 [ReactPHP](https://reactphp.org/)
 [Parsedown](https://parsedown.org/) - libreria para parsear ficheros
@@ -115,7 +125,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
 - [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
 
-### Enlaces PHP
+### 1.4.2. Enlaces PHP
 
 - [Documentación oficial PHP](https://www.php.net/manual/es/)
 - [Sintaxis básica PHP](https://www.php.net/manual/es/language.basic-syntax.phpmode.php)
@@ -124,53 +134,60 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [La manera correcta](https://phptherightway.com/)
 - [Cursos gratuitos Laravel PHP](https://laracasts.com/)
 
-### Frameworks PHP
+### 1.4.3. Frameworks PHP
 
 - [Synfony](https://symfony.es/)
 - [Laravel](https://laravel.com/docs/5.8/installation)
 - [CakePHP](https://cakephp.org/)
 
-### Libros PHP
+### 1.4.4. Libros PHP
 
 [PHP Programming (O'Reilly)](https://docstore.mik.ua/orelly/webprog/php/index.htm)
 
 ----
 
-## Bases de Datos SQL
+## 1.5. Bases de Datos SQL
 
 - Gestión de base de datos con PHPMyAdmin
 - Conexión a la base de datos y consultas desde PHP
 - [Uso de la funcion fetch_assoc para transformar querys en arrays](https://www.php.net/manual/es/mysqli-result.fetch-assoc.php)
  - [Funcion mysqli](https://www.php.net/manual/es/book.mysqli.php)
 
-## Monetizando
+## 1.6. Sistemas -Alojamiento - Hosting
 
-- Google adsense
-- Google adwords
-
-## Serverless
-
-- [Netifly](https://www.netlify.com/)
-- [Github Pages](https://pages.github.com/)
-
-## Awesome Links
-
-- [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
-
-## Comunidades de programadores
-
-- [La web del programador](https://www.lawebdelprogramador.com/)
-- [Codesandbox](https://codesandbox.io)
-- [Codepen](https://codepen.io/)
-
-## Alojamiento - Hosting
-
+### 1.6.1. Hosting
 <https://clouding.io/>
 <DigitalOcean>
 <OVH-com>
 <Clouding.io>
 
+### Sistemas
 
-## Documentación
+- Webmin
+- Virtualmin
+
+## 1.7. Serverless
+
+- [Netifly](https://www.netlify.com/)
+- [Github Pages](https://pages.github.com/)
+
+## 1.8. Monetizando
+
+- Google adsense
+- Google adwords
+
+
+## 1.9. Awesome Links
+
+- [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
+
+## 1.10. Comunidades de programadores
+
+- [La web del programador](https://www.lawebdelprogramador.com/)
+- [Codesandbox](https://codesandbox.io)
+- [Codepen](https://codepen.io/)
+
+
+## 1.11. Documentación
 
 [Documentación para desarrolladores](https://devdocs.io)
