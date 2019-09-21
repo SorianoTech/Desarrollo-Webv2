@@ -124,6 +124,13 @@
     "fecha": "25/07/2019"
   },
   {
+    "nombre": "Agenda de contactos",
+    "url_nombre": "http://35.180.252.132/~sergio/bbdd/contactos/",
+    "url_codigo": "#",
+    "descripcion": "Ejercicio sencillo con bases de datos para guardar los contactos de una agenda.",
+    "fecha": "01/09/2019"
+  },
+  {
     "nombre": "Blog",
     "url_nombre": "projects/blog/pages/private/index.php",
     "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/blog",
