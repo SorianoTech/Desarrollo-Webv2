@@ -147,7 +147,7 @@
   {
     "nombre": "Gestión de proyectos",
     "url_nombre": "http://35.180.252.132/~sergio/bbdd/historico_proyectos/",
-    "url_codigo": "#",
+    "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/BBDD/registro_proyectos/historico_proyectos",
     "descripcion": "Aplicación para llevar un control de los log y alertas de proyectos web.",
     "fecha": "20/09/2019"
   }
