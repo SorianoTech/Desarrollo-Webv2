@@ -9,15 +9,14 @@ Una vez aprendidos estos conocimientos teóricos hemos realizado prácticas dura
 - [`JS`](https://en.wikipedia.org/wiki/ECMAScript)
 - [`PHP`](https://www.php.net/)
 
-
 Para realizar los diseños de aplicaciones web seguiremos el siguiente fases:
 
 1. **Diseño**: consiste en realizar un dibujo visual de cuales son los elementos que van a componer la aplicación. Intentaremos dibujar los máximos detalles posibles, puedes hacer el dibujo en un simple cuaderno.También tendremos que describir todas las funcionalidades, por ejemplo un buscador.
 
-2. **Creación de la base de datos**: esta fase consiste en definir todos los datos que necesitamos guardar así de como todas las relaciones posibles entre las tablas. Por ejemplo, usuarios, password, categorias, fechas, etc. 
-   
-3. **Maquetación**: En esta fase colocaremos todos los elementos utilizando el dibujo utilizando las etiquetas de HTML. 
-   
+2. **Creación de la base de datos**: esta fase consiste en definir todos los datos que necesitamos guardar así de como todas las relaciones posibles entre las tablas. Por ejemplo, usuarios, password, categorias, fechas, etc.
+
+3. **Maquetación**: En esta fase colocaremos todos los elementos utilizando el dibujo utilizando las etiquetas de HTML.
+
 4. **Programación**: consistirá en llevar a cabo toda la lógica y contenido dinámico utilizando php.
 
 ## 1.1. [HTML](html.md)
@@ -69,7 +68,7 @@ Conceptos estudiados:
 - [CSS Mozilla](https://developer.mozilla.org/es/docs/Web/CSS)
 - [W3School](https://www.w3schools.com/css/default.asp)
 
-### 1.2.2. Librerías de estilos
+### 1.2.2. Librerías CSS
 
 - [PureCSS](https://purecss.io/)
 - [Inter Fuentes](https://rsms.me/inter/samples/)
@@ -83,11 +82,15 @@ Conceptos estudiados:
 
 ## 1.3. JavaScript
 
-Lenguaje orientado a eventos
+Lenguaje orientado a eventos, podemos provocar cambios en el DOM utilizando diferentes eventos que llamas por ejemplo a funciones.
+
+Petición AJAX utilizando JQuery para envio de datos por post
 
 ### 1.3.1. Librerias Javascript
 
-[Jquery UI](https://jqueryui.com/)
+- [Jquery UI](https://jqueryui.com/)
+  - [Selecto2 - Selects con buscador](https://select2.org/)
+
 
 ### 1.3.2. Enlaces JavaScript
 
@@ -97,8 +100,7 @@ Lenguaje orientado a eventos
 - [Node](https://nodejs.org/en/) - Servidor, equivaldría a PHP
 - [NPM - Gestor de paquetes](https://www.npmjs.com/)
 
-
-### 1.3.3. Editor de texto en javascript
+### 1.3.3. Editor de texto en Javascript
 
 - [Summernote](https://summernote.org/)
 - [Quill](https://quilljs.com/)
@@ -118,79 +120,122 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - Las variables en PHP se definen con el símbolo `$` (\$variable) y no es necesario indicar el tipo de variable, php es capaz de identificar si es de tipo texto o numérica.
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 - Con la etiqueta hidden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
+- [Programación orientada a objetos con PHP](https://www.php.net/manual/es/language.oop5.php)
+- Cookies vs Sesiones. Cookies se almacenan en el cliente, las sesiones de almacenan en el servidor.
+- Securizar el control de acceso mediante cookies, sesiones y $_SERVER
+- [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
+- [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
+- [La seguridad de la constraseñas.](https://www.php.net/manual/es/faq.passwords.php) Sin hashing, cualquier contraseña que se almacene en la base de datos de la aplicación podrá ser robada si la base de datos se ve comprometida
 
-### 1.4.1. Librerias PHP
+### 1.4.1. Programación orientada a objetos (POO)
+
+- [Lo básico](https://www.php.net/manual/es/language.oop5.basic.php)
+- Clases: 
+  - Constantes
+  - Variables(propiedades)
+  - Funciones (métodos)
+
+
+### 1.4.2. Librerias PHP
 
 [ReactPHP](https://reactphp.org/)
 [Parsedown](https://parsedown.org/) - libreria para parsear ficheros
+[PHP Mailer](https://github.com/PHPMailer/PHPMailer)
 
-- Cookies vs Sesiones. Cookies se almacenan en el cliente, las sesiones de almacenan en el servidor.
-- [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
-- [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
 
-### 1.4.2. Enlaces PHP
+
+### 1.4.3. Enlaces PHP
 
 - [Documentación oficial PHP](https://www.php.net/manual/es/)
 - [Sintaxis básica PHP](https://www.php.net/manual/es/language.basic-syntax.phpmode.php)
-- [Condicionales](https://www.php.net/manual/es/control-structures.if.php)
+- [Gestor de Paquetes Composer](https://getcomposer.org/)
 - [Pakage Manager](https://packagist.org/)
 - [La manera correcta](https://phptherightway.com/)
 - [Cursos gratuitos Laravel PHP](https://laracasts.com/)
 
-### 1.4.3. Frameworks PHP
+### 1.4.4. Frameworks PHP
 
 - [Synfony](https://symfony.es/)
 - [Laravel](https://laravel.com/docs/5.8/installation)
 - [CakePHP](https://cakephp.org/)
 
-### 1.4.4. Libros PHP
+### 1.4.5. Libros PHP
 
 [PHP Programming (O'Reilly)](https://docstore.mik.ua/orelly/webprog/php/index.htm)
 
-----
+---
 
 ## 1.5. Bases de Datos SQL
 
 - Gestión de base de datos con PHPMyAdmin
 - Conexión a la base de datos y consultas desde PHP
-- [Uso de la funcion fetch_assoc para transformar querys en arrays](https://www.php.net/manual/es/mysqli-result.fetch-assoc.php)
- - [Funcion mysqli](https://www.php.net/manual/es/book.mysqli.php)
+- [Uso de la función fetch_assoc para transformar querys en arrays](https://www.php.net/manual/es/mysqli-result.fetch-assoc.php)
+- [Función mysqli](https://www.php.net/manual/es/book.mysqli.php)
+- Preparar consultas para impedir sql injection.
 
 ## 1.6. Sistemas -Alojamiento - Hosting
 
 ### 1.6.1. Hosting
-<https://clouding.io/>
-<DigitalOcean>
-<OVH-com>
-<Clouding.io>
 
-### Sistemas
+- [Clouding.io](www.clouding.io)
+- [DigitalOcean](www.digitalocean.com)
+- [OVH](www.ovh.com)
 
-- Webmin
-- Virtualmin
+
+### 1.6.2. Sistemas
+
+Paneles de administración para administrar nuestro servidor linux:
+
+- [Webmin](http://www.webmin.com/) - Panel de control para la gestión de servidores Linux.
+- [Virtualmin](https://www.virtualmin.com/) - Plugin para webmin para crer y administrar los virtualhost de nuestro servidor. Proporcionan un scrip de instalacion del entorno LAMP o LEMP, webmind y virtualmind [aquí](https://www.virtualmin.com/download.html)
 
 ## 1.7. Serverless
 
 - [Netifly](https://www.netlify.com/)
 - [Github Pages](https://pages.github.com/)
 
-## 1.8. Monetizando
+## 1.8. Framework para desarrollo de appmoviles
+
+- [Onsen](https://onsen.io/)
+- [Quasar](https://quasar.dev/)
+- [Polyemer](https://pwa-starter-kit.polymer-project.org/)
+
+## 1.9. Monetizando
 
 - Google adsense
 - Google adwords
 
-
-## 1.9. Awesome Links
+## 1.10. Awesome Links
 
 - [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
+- [Gestores de contenido CMS](https://github.com/postlight/awesome-cms) 
 
-## 1.10. Comunidades de programadores
+## 1.11. Comunidades de programadores
 
 - [La web del programador](https://www.lawebdelprogramador.com/)
 - [Codesandbox](https://codesandbox.io)
 - [Codepen](https://codepen.io/)
+- [Reddit PHP](https://www.reddit.com/r/PHP/)
+- [stackoverflow](https://es.stackoverflow.com/)
 
-
-## 1.11. Documentación
+## 1.12. Documentación
 
 [Documentación para desarrolladores](https://devdocs.io)
+
+## 1.13. Cursos
+
+[Scrimba](https://scrimba.com/)
+
+## 1.14. Plataformas Freelance
+
+https://www.fiverr.com/
+https://www.malt.es/
+
+
+## 1.15. Eventos
+
+https://www.codemotion.com/
+
+## 1.16. Herramientas
+
+[Utilidad para crear Mockup](https://mockflow.com/)
