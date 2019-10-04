@@ -86,17 +86,21 @@ Lenguaje orientado a eventos, podemos provocar cambios en el DOM utilizando dife
 
 Petición AJAX utilizando JQuery para envio de datos por post
 
-### 1.3.1. Librerias Javascript
+### 1.3.1. Librerías Javascript
 
 - [Jquery UI](https://jqueryui.com/)
   - [Selecto2 - Selects con buscador](https://select2.org/)
 
+### Frameworks Javascript
+
+[Vue](https://vuejs.org/v)
+[React](https://es.reactjs.org/)
+[Angular](https://angular.io/docs)
 
 ### 1.3.2. Enlaces JavaScript
 
 - [Webpack](https://webpack.js.org/)
 - [Browserft](http://browserify.org/)
-- [Vue](https://vuejs.org/)
 - [Node](https://nodejs.org/en/) - Servidor, equivaldría a PHP
 - [NPM - Gestor de paquetes](https://www.npmjs.com/)
 
@@ -120,29 +124,32 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - Las variables en PHP se definen con el símbolo `$` (\$variable) y no es necesario indicar el tipo de variable, php es capaz de identificar si es de tipo texto o numérica.
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 - Con la etiqueta hidden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
-- [Programación orientada a objetos con PHP](https://www.php.net/manual/es/language.oop5.php)
 - Cookies vs Sesiones. Cookies se almacenan en el cliente, las sesiones de almacenan en el servidor.
-- Securizar el control de acceso mediante cookies, sesiones y $_SERVER
+- Securizar el control de acceso mediante cookies, sesiones y \$\_SERVER
 - [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
+- [Retrollamadas](https://www.php.net/manual/es/memcached.callbacks.result.php)(Callback).
 - [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
-- [La seguridad de la constraseñas.](https://www.php.net/manual/es/faq.passwords.php) Sin hashing, cualquier contraseña que se almacene en la base de datos de la aplicación podrá ser robada si la base de datos se ve comprometida
+- [La seguridad de la constraseñas.](https://www.php.net/manual/es/faq.passwords.php) Sin hashing, cualquier contraseña que se almacene en la base de datos de la aplicación podrá ser robada si la base de datos se ve comprometida.
+- [Programación orientada a objetos con PHP](https://www.php.net/manual/es/language.oop5.php)
 
 ### 1.4.1. Programación orientada a objetos (POO)
 
 - [Lo básico](https://www.php.net/manual/es/language.oop5.basic.php)
-- Clases: 
-  - Constantes
-  - Variables(propiedades)
-  - Funciones (métodos)
+- **Clases**: se componen de...
 
+  - **Constantes**: son variables que no cambian de valor durante toda la ejecución.
+  - **Propiedades(variables)**: son propiedades a las que podemos acceder utilizando `$this->propiedad`. Las propiedades pueden ser públicas o privadas. Las que son públicas pueden ser utilizadas en otras clases extendidas.
+  - **Métodos(funciones)**: son funciones que realizan alguna acción dentro de la clase, accedemos a ellas con `$this->metodo()`
+
+- Las variables que definimos dentro de una clase pueden ser publicas o privadas
+
+- **Clases extendidas**: las clases extendidas nos permiten añadir alguna funcionalidad extra de clase que ya tengamos creada, pudiendo acceder a sus componentes. Por ejemplo si tenemos una clase que nos genera una tabla, podemos crear una clase extendida de esta para cambiar sus atributos de estilo.
 
 ### 1.4.2. Librerias PHP
 
-[ReactPHP](https://reactphp.org/)
-[Parsedown](https://parsedown.org/) - libreria para parsear ficheros
-[PHP Mailer](https://github.com/PHPMailer/PHPMailer)
-
-
+- [ReactPHP](https://reactphp.org/).
+- [Parsedown](https://parsedown.org/) - libreria para parsear ficheros
+- [PHP Mailer](https://github.com/PHPMailer/PHPMailer). Libreria que nos permite utilizar nuestro servidor de correo.
 
 ### 1.4.3. Enlaces PHP
 
@@ -173,6 +180,8 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Función mysqli](https://www.php.net/manual/es/book.mysqli.php)
 - Preparar consultas para impedir sql injection.
 
+---
+
 ## 1.6. Sistemas -Alojamiento - Hosting
 
 ### 1.6.1. Hosting
@@ -180,7 +189,6 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Clouding.io](www.clouding.io)
 - [DigitalOcean](www.digitalocean.com)
 - [OVH](www.ovh.com)
-
 
 ### 1.6.2. Sistemas
 
@@ -208,7 +216,7 @@ Paneles de administración para administrar nuestro servidor linux:
 ## 1.10. Awesome Links
 
 - [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
-- [Gestores de contenido CMS](https://github.com/postlight/awesome-cms) 
+- [Gestores de contenido CMS](https://github.com/postlight/awesome-cms)
 
 ## 1.11. Comunidades de programadores
 
@@ -220,17 +228,16 @@ Paneles de administración para administrar nuestro servidor linux:
 
 ## 1.12. Documentación
 
-[Documentación para desarrolladores](https://devdocs.io)
+- [Documentación para desarrolladores](https://devdocs.io)
 
 ## 1.13. Cursos
 
-[Scrimba](https://scrimba.com/)
+- [Scrimba](https://scrimba.com/)
 
 ## 1.14. Plataformas Freelance
 
-https://www.fiverr.com/
-https://www.malt.es/
-
+- https://www.fiverr.com/
+- https://www.malt.es/
 
 ## 1.15. Eventos
 

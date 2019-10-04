@@ -146,9 +146,7 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-10 ml-auto">
-          <p class="lead">Tecnología como pasión, administrador de sistemas con experiencia en servidores
-            Windows y Linux, microservicios con Docker. Estudioso de la tecnología Blockchain, redes Bitcoin,
-            Ethereum e Hyperledger. Diseño de web con HTML, CSS, JS y PHP.</p>
+          <p class="lead">Tecnología como pasión, administrador de sistemas y desarrollador web. Estudioso de la tecnología Blockchain, redes Bitcoin, Ethereum e Hyperledger. Diseño de web con HTML, CSS, JS y PHP.</p>
         </div>
         <!--
         <div class="col-lg-4 mr-auto">
