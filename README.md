@@ -125,12 +125,13 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Conocer como activar los errores en PHP para mostrarlo en la web(en tiempo de ejecución).](https://www.anerbarrena.com/mostrar-errores-php-608/)
 - Con la etiqueta hidden en un input puedo llevarme los valores que recibo de un formulario para mas tarde comprobar los datos.
 - Cookies vs Sesiones. Cookies se almacenan en el cliente, las sesiones de almacenan en el servidor.
-- Securizar el control de acceso mediante cookies, sesiones y \$\_SERVER
+- Securizar el control de acceso mediante cookies, sesiones y \$\_SERVER.
 - [Variables Variables](https://www.php.net/manual/es/language.variables.variable.php). Nos crea un variable por cada elemento de una array. Por ejemplo lo que recibimos de un formulario.
 - [Retrollamadas](https://www.php.net/manual/es/memcached.callbacks.result.php)(Callback).
 - [Generadores](https://www.php.net/manual/es/language.generators.overview.php). Nos permite ejecutar una función repetidamente, como por ejemplo para devolver todas las lineas de un fichero llamando a un función. La palabra reservar en vez de return es `yield`.
 - [La seguridad de la constraseñas.](https://www.php.net/manual/es/faq.passwords.php) Sin hashing, cualquier contraseña que se almacene en la base de datos de la aplicación podrá ser robada si la base de datos se ve comprometida.
 - [Programación orientada a objetos con PHP](https://www.php.net/manual/es/language.oop5.php)
+- [Serialización](https://www.php.net/manual/es/language.oop5.serialization.php) - Guardar datos en un fichero o base de datos de forma permanente basado en un objeto. Podemos recuperar el objeto para utilizar sin tener que consultar la base de datos.
 
 ### 1.4.1. Programación orientada a objetos (POO)
 
@@ -159,12 +160,14 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Pakage Manager](https://packagist.org/)
 - [La manera correcta](https://phptherightway.com/)
 - [Cursos gratuitos Laravel PHP](https://laracasts.com/)
+- [Sanbox PHP y funciones](http://onlinephpfunctions.com/)
 
 ### 1.4.4. Frameworks PHP
 
 - [Synfony](https://symfony.es/)
 - [Laravel](https://laravel.com/docs/5.8/installation)
 - [CakePHP](https://cakephp.org/)
+- [Code Ignitor](https://codeigniter.com/)
 
 ### 1.4.5. Libros PHP
 
@@ -180,9 +183,17 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Función mysqli](https://www.php.net/manual/es/book.mysqli.php)
 - Preparar consultas para impedir sql injection.
 
+### Enlaces SQL
+
+[MySQL TUTORIAL](http://www.mysqltutorial.org/)
+[Documentacion MariaDB ](https://mariadb.com/kb/en/library/documentation/)
+
 ---
 
 ## 1.6. Sistemas -Alojamiento - Hosting
+
+- Filtrar el acceso por ip a un servidor web
+- 
 
 ### 1.6.1. Hosting
 
@@ -196,6 +207,11 @@ Paneles de administración para administrar nuestro servidor linux:
 
 - [Webmin](http://www.webmin.com/) - Panel de control para la gestión de servidores Linux.
 - [Virtualmin](https://www.virtualmin.com/) - Plugin para webmin para crer y administrar los virtualhost de nuestro servidor. Proporcionan un scrip de instalacion del entorno LAMP o LEMP, webmind y virtualmind [aquí](https://www.virtualmin.com/download.html)
+- [Documentaicon apache](http://httpd.apache.org/docs/)
+  - [Manual Apache (desarrollo web)](https://desarrolloweb.com/manuales/41)
+  - Reglas de rescritura para webs amigables
+  - Capa de seguridad con httacces [7G Firewall](https://perishablepress.com/7g-firewall/#requirements)
+
 
 ## 1.7. Serverless
 
