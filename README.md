@@ -91,20 +91,20 @@ Petición AJAX utilizando JQuery para envio de datos por post
 - [Jquery UI](https://jqueryui.com/)
   - [Selecto2 - Selects con buscador](https://select2.org/)
 
-### Frameworks Javascript
+### 1.3.2. Frameworks Javascript
 
 [Vue](https://vuejs.org/v)
 [React](https://es.reactjs.org/)
 [Angular](https://angular.io/docs)
 
-### 1.3.2. Enlaces JavaScript
+### 1.3.3. Enlaces JavaScript
 
 - [Webpack](https://webpack.js.org/)
 - [Browserft](http://browserify.org/)
 - [Node](https://nodejs.org/en/) - Servidor, equivaldría a PHP
 - [NPM - Gestor de paquetes](https://www.npmjs.com/)
 
-### 1.3.3. Editor de texto en Javascript
+### 1.3.4. Editor de texto en Javascript
 
 - [Summernote](https://summernote.org/)
 - [Quill](https://quilljs.com/)
@@ -183,7 +183,7 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Función mysqli](https://www.php.net/manual/es/book.mysqli.php)
 - Preparar consultas para impedir sql injection.
 
-### Enlaces SQL
+### 1.5.1. Enlaces SQL
 
 [MySQL TUTORIAL](http://www.mysqltutorial.org/)
 [Documentacion MariaDB ](https://mariadb.com/kb/en/library/documentation/)
@@ -193,48 +193,76 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 ## 1.6. Sistemas -Alojamiento - Hosting
 
 - Filtrar el acceso por ip a un servidor web
-- 
+- Configurar servidor de correo
 
 ### 1.6.1. Hosting
 
 - [Clouding.io](www.clouding.io)
 - [DigitalOcean](www.digitalocean.com)
 - [OVH](www.ovh.com)
+- [AWS] (www.aws.com)
 
-### 1.6.2. Sistemas
+### 1.6.2. Sistemas y seguridad
 
-Paneles de administración para administrar nuestro servidor linux:
+Paneles de administración para administrar nuestro servidor linux mediante una interface web:
 
-- [Webmin](http://www.webmin.com/) - Panel de control para la gestión de servidores Linux.
+- [Webmin](http://www.webmin.com/) Manual[https://raiolanetworks.es/blog/webmin-usermin-virtualmin/] - Panel de control para la gestión de servidores Linux.
 - [Virtualmin](https://www.virtualmin.com/) - Plugin para webmin para crer y administrar los virtualhost de nuestro servidor. Proporcionan un scrip de instalacion del entorno LAMP o LEMP, webmind y virtualmind [aquí](https://www.virtualmin.com/download.html)
 - [Documentaicon apache](http://httpd.apache.org/docs/)
   - [Manual Apache (desarrollo web)](https://desarrolloweb.com/manuales/41)
-  - Reglas de rescritura para webs amigables
+  - [Reglas de rescritura para webs amigables mediante httacces](https://www.arsys.es/blog/programacion/url-amigables-htaccess/)
   - Capa de seguridad con httacces [7G Firewall](https://perishablepress.com/7g-firewall/#requirements)
 
 
-## 1.7. Serverless
+### 1.6.3. Enlaces Herramientas Sistemas y hosting 
+
+- [Herramienta papa comprobar registros DNS de correo](https://www.appmaildev.com/)
+- [Comprobar la velocidad de carga ](https://developers.google.com/speed/pagespeed/insights/)
+- [Google Console](https://search.google.com/search-console/) - Herramienta para comprobar el estado de la indexación de sus sitios en internet por el buscador y optimizar su visibilidad. 
+- [Verificar el envio de correo para que llegue a micrososft](https://sendersupport.olc.protection.outlook.com/snds/) 
+
+
+## 1.7. Wordpress
+
+- [Temas hijos](https://codex.wordpress.org/es:Temas_hijos) - Es importante crear temas hijos si queremos realizar modificaciones sobre el tema. De esta forma cuando el tema se actualice no nos modificara nuestro tema.
+- [Roles de usuario en wordpress](https://wordpress.org/support/article/roles-and-capabilities/)
+- [Awesome Plugin Wordpress](https://github.com/designwall/Awesome-WordPress-Plugins)
+- [Shortcodes](https://codex.wordpress.org/Shortcode_API) - codigo que me permite generar elementos
+- [Activar mode debug Wordpress] (https://decodecms.com/habilitar-el-modo-debug-en-wordpress/)
+- 
+
+### Plugin Wordpress
+
+- [WP Mail SMTP](https://wpmailsmtp.com) - nos permite configurar el servidor de correo
+- [Forminator](https://es.wordpress.org/plugins/forminator/) - Formularios
+- [WP Fasted Cache ](https://es.wordpress.org/plugins/wp-fastest-cache/)- nos cachea la paginas para aumentar la velocidad de carga
+- [Loginizer](https://es.wordpress.org/plugins/loginizer/) - bloquea ataques de fuerza bruta para el acceso de login en el panel de administración.
+- [Mantenimiento Web](https://es.wordpress.org/plugins/wp-maintenance-mode/)
+- [Forzar SSL](https://es.wordpress.org/plugins/wp-force-ssl/)
+- [Enviar notificaciones PUSH](https://es.wordpress.org/plugins/onesignal-free-web-push-notifications/)
+
+## 1.8. Serverless
 
 - [Netifly](https://www.netlify.com/)
 - [Github Pages](https://pages.github.com/)
 
-## 1.8. Framework para desarrollo de appmoviles
+## 1.9. Framework para desarrollo de appmoviles
 
 - [Onsen](https://onsen.io/)
 - [Quasar](https://quasar.dev/)
 - [Polyemer](https://pwa-starter-kit.polymer-project.org/)
 
-## 1.9. Monetizando
+## 1.10. Monetizando
 
 - Google adsense
 - Google adwords
 
-## 1.10. Awesome Links
+## 1.11. Awesome Links
 
 - [https://github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome)
 - [Gestores de contenido CMS](https://github.com/postlight/awesome-cms)
 
-## 1.11. Comunidades de programadores
+## 1.12. Comunidades de programadores
 
 - [La web del programador](https://www.lawebdelprogramador.com/)
 - [Codesandbox](https://codesandbox.io)
@@ -242,23 +270,23 @@ Paneles de administración para administrar nuestro servidor linux:
 - [Reddit PHP](https://www.reddit.com/r/PHP/)
 - [stackoverflow](https://es.stackoverflow.com/)
 
-## 1.12. Documentación
+## 1.13. Documentación
 
 - [Documentación para desarrolladores](https://devdocs.io)
 
-## 1.13. Cursos
+## 1.14. Cursos
 
 - [Scrimba](https://scrimba.com/)
 
-## 1.14. Plataformas Freelance
+## 1.15. Plataformas Freelance
 
 - https://www.fiverr.com/
 - https://www.malt.es/
 
-## 1.15. Eventos
+## 1.16. Eventos
 
 https://www.codemotion.com/
 
-## 1.16. Herramientas
+## 1.17. Herramientas
 
 [Utilidad para crear Mockup](https://mockflow.com/)
