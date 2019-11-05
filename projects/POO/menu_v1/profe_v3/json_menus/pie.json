@@ -1,0 +1,18 @@
+{  "links": [
+    {
+      "name": "Cookies",
+      "id": 5,
+      "link": "cookies.php"
+    },
+    {
+      "name": "Legal",
+      "id": 6,
+      "link": "legal.php"
+    },
+    {
+      "name": "Protección de Datos",
+      "id": 7,
+      "link": "datos_ley_proteccion.php"    
+    }
+    ]
+}

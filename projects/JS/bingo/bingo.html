@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table.sample {
+            font-size: 15ex;
+            border-width: 1px;
+            border-spacing: 0px;
+            border-style: none;
+            border-color: blue;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table.sample th {
+            border-width: 1px;
+            padding: 5px;
+            border-style: inset;
+            border-color: gray;
+            background-color: white;
+
+        }
+
+        table.sample td {
+            border-width: 1px;
+            padding: 5px;
+            border-style: inset;
+            border-color: gray;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .marcado {
+            color: #E1EEF4;
+        }
+    </style>
+    <script>
+        carton = [];
+        maximos = [25, 50, 75, 99]; // Creamos una array con los números máximos de los cartones por filas.
+        minimos = [1, 26, 51, 76];  // Otro array con los números mínimos. 
+        contador = 0;
+
+        function getRandomInt(min, max) { // Función que devuelve un número aleatorio entre dos números  
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        // Función para generar un carton
+        function crear_carton() {
+            //creamos una variable contado con valor 1
+            var con = 1;
+            // Generamos 20 números
+            for (var i = 0; i < 20; i++) {
+                var numero = getRandomInt(minimos[contador], maximos[contador]); // en contandor entran los números aleatorios entre minimos y maximos.
+                while (carton.indexOf(numero) > -1) { // si me devuelve un número mayor que -1 es que lo ha encontrado el número y sigue buscando un número aleatorio.
+                    var numero = getRandomInt(minimos[contador], maximos[contador]); //metemos en "numero" el número aleatorio.
+                }
+                carton[i] = numero; //meto en el elemento i del array el número.
+                if (con == 5) { 
+                    contador++; //¿Para que suma aqui contador?
+                    con = 0; 
+                }
+                con++;
+            }
+            carton = carton.sort(function (a, b) { return a - b }); //nos devuelve el carton de una forma ordenada. Se hace asi (no buscar lógica)
+
+            var fila = 0;
+            var td = '';
+            con = 1;
+            for (key in carton) { //bucle para recorrer el carton
+                td += "<td>" + carton[key] + "</td>"; //inserto una columna y el número
+                if (con == 5) {
+                    document.getElementById('fila_' + fila).innerHTML = td;
+                    fila++;
+                    td = "";
+                    con = 0;
+                }
+                con++;
+            }
+            //bucle para marcar
+            for (var i = 0; i < 4; i++) {
+                var tds = document.getElementById('fila_' + i).getElementsByTagName('td'); //creamos un objeto por cada una de las filas
+                for (var t = 0; t < 5; t++) { // recorro los td 'fila_'  5 en total
+                    console.log(tds[t].innerHTML);//para ver lo que tiene cada tds
+                    tds[t].onclick = marcar; // si uso parentesis se ejecuta cuando llega a la función, sin parentesis cuando lo llamo 
+                }
+            }
+        }
+
+        function marcar() { // nos asigna la clase al elemento tds del bucle para marcar, utilizando el objeto tds
+            this.className = 'marcado'; // this es el objeto por el que es llamado.
+        }
+
+        window.onload = crear_carton;
+
+    </script>
+</head>
+
+<body>
+    <div id="carton">
+        <table id="tabla_carton" class="sample">
+            <tr id='fila_0'></tr>
+            <tr id='fila_1'></tr>
+            <tr id='fila_2'></tr>
+            <tr id='fila_3'></tr>
+        </table>
+    </div>
+</body>
+
+</html>

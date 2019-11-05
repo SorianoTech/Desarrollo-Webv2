@@ -1,0 +1,42 @@
+{
+    "links": [
+        {
+            "name": "Inicio",
+            "id": 1,
+            "link": "index.php"
+        },
+        {
+            "name": "Contacto",
+            "id": 2,
+            "link": "contacto.php"
+        },
+        {
+            "name": "Legal",
+            "id": 3,
+            "link": "legal.php"
+        },
+        {
+            "name": "Blog",
+            "id": 4,
+            "link": "blog.php"
+        },
+        {
+            "name": "Tienda",
+            "id": 5,
+            "link": "tienda.php",
+            "categorias": [
+
+                {
+                    "name": "Ropa",
+                    "id": 45,
+                    "link": "ropa.php"
+                },                    
+                {
+                    "name": "Zapatos",
+                    "id": 46,
+                    "link": "zapatos.php"
+                }
+            ]
+        }        
+    ]
+}

@@ -1,0 +1,62 @@
+// EDgrid Config
+
+$cssCore : false;
+$container : container;
+$item      : item;
+
+// Importing
+@import "libs/ed-grid.scss";
+@import "libs/normalize.scss";
+
+// Custom styles
+
+body {
+  background: #EDEBE6;
+  color: #444A58;
+  font-family: Ubuntu;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*--------------------------------- HEADER ---------------------------------*/
+.header {
+  background: #21252B;
+  color: #C8C9CA;
+  text-align: center;
+  padding: 2rem;
+}
+
+/*--------------------------------- CONTENT ---------------------------------*/
+.main .title {
+  text-align: center;
+  margin: 2rem;
+}
+
+.article {
+  background: #fff;
+  padding: 1rem 2rem;
+}
+
+/*--------------------------------- SIDEBAR ---------------------------------*/
+@import "table-of-contents";
+
+.sidebar-block {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: fixed;
+  width: 16rem;
+}
+
+/*--------------------------------- FOOTER ---------------------------------*/
+.footer {
+  color: #ddd;
+  background: #21252B;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+
+  a{
+    color: #ddd;
+  }
+}

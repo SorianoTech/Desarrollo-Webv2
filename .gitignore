@@ -1,3 +1,5 @@
 node_modules
 nbproject
 datos.php
+config.php
+db.php

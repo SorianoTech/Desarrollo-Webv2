@@ -1,0 +1,157 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #e6ffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    padding: 15px;
+    background-color: #0B6FA4;
+    text-align: center;
+    height: 30px;
+}
+
+header nav select, header nav button{
+    font-size: 1.3em;
+}
+
+section{
+    margin: 15px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    min-height: 450px;    
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#nuevoproyecto{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px;
+    display: none;       
+}
+
+#todo{
+    display: none;
+    width: auto;
+}
+
+#ok{
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #009933;
+    color: #FFFFFF;
+    border: 1px #003333 solid;
+    width: 80%;
+    display: none;
+}
+
+#error{
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #901830;
+    color: #FFFFFF;
+    border: 1px #888 solid;
+    width: 80%;
+    display: none;
+}
+
+
+
+table.paleBlueRows {
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 2px;
+}
+table.paleBlueRows tbody td {
+  font-size: 13px;
+}
+
+
+table.paleBlueRows tbody tr:hover {
+    background-color: #7ccef5;
+}
+table.paleBlueRows tbody td.ancho80 {
+    max-width: 80px;
+}
+table.paleBlueRows tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.paleBlueRows thead {
+  background: #0B6FA4;
+  border-bottom: 5px solid #FFFFFF;
+}
+table.paleBlueRows thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+table.paleBlueRows thead th:first-child {
+  border-left: none;
+}
+
+table.paleBlueRows tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  background: #D0E4F5;
+  border-top: 3px solid #444444;
+}
+table.paleBlueRows tfoot td {
+  font-size: 14px;
+}
+
+.dedo{
+    cursor: pointer;
+}
+
+
+textarea{
+    width: 98%;
+    height: 80px;
+    border-radius: 3px;
+    border: #D0E4F5 solid 1px;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(124,206,245,0.50);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(124,206,245,0.50);
+    box-shadow: 0px 0px 2px 2px rgba(124,206,245,0.50); 
+    margin-bottom: 6px;
+    padding: 10px;
+}
+
+button.normal{
+    border-radius: 3px;
+    background: #0B6FA4;
+    color: #FFFFFF;
+    float: right;
+    padding: 10px;
+    border: 0px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.inputclase{
+    border-radius: 3px;
+    border: #D0E4F5 solid 1px;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(124,206,245,0.50);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(124,206,245,0.50);
+    box-shadow: 0px 0px 2px 2px rgba(124,206,245,0.50); 
+    margin-bottom: 6px;
+    padding: 10px;
+}

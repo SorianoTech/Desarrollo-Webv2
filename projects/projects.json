@@ -150,5 +150,21 @@
     "url_codigo": "https://github.com/SorianoTech/Desarrollo-Webv2/tree/master/projects/BBDD/registro_proyectos/historico_proyectos",
     "descripcion": "Aplicación para llevar un control de los log y alertas de proyectos web.",
     "fecha": "20/09/2019"
+  },
+  {
+    "nombre": "Crear un menu de navegación usando clases",
+    "tipo": "POO",
+    "url_nombre": "projects/POO/menu/index_menu.php",
+    "url_codigo": "#",
+    "descripcion": "Aprendemos como crear una clase e instanciarla para utilizarla en tareas repetitivas.",
+    "fecha": "01/10/2019"
+  },
+  {
+    "nombre": "Lista de la compra utilizando JS, MYSQL y PHP",
+    "tipo": "JS",
+    "url_nombre": "projects/JS/listacompra/index.php",
+    "url_codigo": "#",
+    "descripcion": "Genera una lista de compra persistente. Mediante peticiones AJAX con jQuery guardamos en la base de datos.",
+    "fecha": "01/10/2019"
   }
 ]

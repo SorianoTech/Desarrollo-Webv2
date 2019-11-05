@@ -12,34 +12,38 @@ if ( !empty($_POST['texto']) && isset($_POST['dominio']) ){
         $fila = $resultado->fetch_assoc();
         $id_proyecto = $fila['id'];
         $texto= $_POST['texto'];
+        $id_empresa = $_POST['id_empresa'];
     if($_POST['tipo']==0){
         //Insertamos el LOG
-        $sql = "INSERT INTO proyectos_log (log, id_proyecto) VALUES ('".$texto."','".$id_proyecto."')";
+        $sql = "INSERT INTO proyectos_log (log, id_proyecto,id_empresa) VALUES ('".$texto."','".$id_proyecto."','".$id_empresa."')";
+        echo $sql;
         if ($mysqli->query($sql)) {
             $mysqli->close();
             header("Location: index.php?dominio=$proyecto&ok=1");
             exit();
         }else{
-            header("Location: index.php?dominio=$proyecto&ok=0");
+            header("Location: index.php?dominio=$proyecto&ok=fallolog");
             exit();
         }
-    }else{
+    }else{//tipo no es igual a 0
     //inserto una alerta
         if(!empty($_POST['fecha'])){
             $fecha=$_POST['fecha'];
-            $sql = "INSERT INTO proyectos_alertas (alerta, fecha, id_proyecto) VALUES ('".$texto."','".$fecha."','".$id_proyecto."')";
+            $sql = "INSERT INTO proyectos_alertas (alerta, fecha, id_proyecto, id_empresa) VALUES ('".$texto."','".$fecha."','".$id_proyecto."','".$id_empresa."')";
                 if ($mysqli->query($sql)) {
                     $mysqli->close();
                     header("Location: index.php?dominio=$proyecto&ok=1");
                     exit();
                 }else{
-                    header("Location: index.php?dominio=$proyecto&ok=0");
+                    header("Location: index.php?dominio=$proyecto&ok=falloalinsertar");
                     exit();
-        }}else{
-            header("Location: index.php?dominio=$proyecto&ok=0");
+                }
+        }else{//no hay tengo en la fecha
+            header("Location: index.php?dominio=$proyecto&ok=nofecha");
                     exit();
         }
     }
-}
-header("Location: index.php?dominio=$proyecto&ok=0");
+}else{
+header("Location: index.php?dominio=$proyecto&ok=texto-dominio");
 exit();
+}

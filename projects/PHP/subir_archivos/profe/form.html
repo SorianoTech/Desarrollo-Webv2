@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><!-- El tipo de codificación de datos, enctype, DEBE especificarse como sigue -->
+            <form enctype="multipart/form-data" action="guardar.php" method="POST">
+                <!-- MAX_FILE_SIZE debe preceder al campo de entrada del fichero -->
+                <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+                <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
+                Enviar este fichero: <input name="fichero_usuario" type="file" accept=".jpg,.jpeg" />
+                <textarea name="pregunta" maxlength="500" placeholder="Nueva Pregunta"></textarea>
+                <input type="submit" value="Enviar fichero" />
+            </form></div>
+    </body>
+</html>

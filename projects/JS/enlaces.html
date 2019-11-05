@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
+        <script>
+
+            function pintar_links() {
+                var texto = "<ul>";
+                enlaces = document.getElementsByTagName('a');
+                for (var e = 0; e < enlaces.length; ++e) {
+                    texto += "<li><a href='" + enlaces[e].href + "'>" + enlaces[e].innerHTML + "</a></li>";
+                    enlaces[e].onclick = correo;
+                }
+                texto += "</ul>";
+                document.getElementById("listado").innerHTML = texto;
+                pintar_links_();
+            }
+
+            function pintar_links_() {
+                enlaces2 = document.getElementById('listado').getElementsByTagName('a');
+                for (var e = 0; e < enlaces2.length; ++e) {
+                    enlaces2[e].onclick = correo;
+                }
+            }
+
+
+            function correo(event) {
+                //console.log(this.href);
+                url = this.href;
+                //$('#exampleModal').modal('show');
+                document.getElementById('publicidad').className = 'ver';
+                event.preventDefault();
+            }
+
+            function nomeinteresa() {
+                window.location = url;
+            }
+
+            function meinteresa() {
+                /*
+                 * todo el tema de guardar el mail en BBDD vía ajax
+                 * f
+                 */
+                window.location = url;
+            }
+
+            window.onload = function () {
+                pintar_links();
+                document.getElementById('si').onclick = meinteresa;
+                document.getElementById('no').onclick = nomeinteresa;
+                /* más programación */
+            };
+
+            //window.onload  = pintar_links;
+        </script>
+
+        <style>
+            .outer {
+                display: table;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color:  rgba(0,0,255,0.5);
+            }
+
+            .middle {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .inner {
+                margin-left: auto;
+                margin-right: auto;
+                width: 400px;
+                padding: 10px;
+                border-radius: 15px;
+                background-color: #227db7;
+                color: #FFF;
+            }
+
+            .esconder{
+                display: none;
+            }
+
+            .ver{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Es un hecho establecido hace demasiado <a href="https://www.ciberweb.com">tiempo que un lector</a> se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo <a href="https://www.ciberweb.com">tiempo que un lector</a> un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
+        <p>Es un hecho establecido hace demasiado <a href="https://www.sucurriculum.com">sucurriculum</a> se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
+        <p>Es un hecho establecido hace demasiado <a href="https://www.elmundo.com">el mundo es un diario que dice cosas... solo dice</a> se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y <a href='https://netbeans.com'>editores de páginas web</a> usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
+        <div id="listado">Esto es un texto</div>
+        <button onclick="console.log(document.getElementById('listado').innerHTML)">VER CONTENIDO LISTADO</button>
+        <button onclick="pintar_links()">PINTAR LINK</button>
+
+
+
+        <div id="publicidad" class="esconder">
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner">
+                        <h3>Te vamos a mandar al enlaces.<br> ¿Pero antes te gustaría suscribirte?</h3>
+                        <p>
+
+                            <input type="email" id="correo" placeholder="Su Correo">
+                            <br>
+                            <br>
+                            <button id='si'>Me Interesa</button>
+                            <button id='no'>No Me Interesa</button>
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Se quiere suscribir</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Mail:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="nomeinteresa();" class="btn btn-secondary" data-dismiss="modal">No me interesa</button>
+                        <button type="button" onclick="meinteresa();" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </body>
+</html>

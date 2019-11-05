@@ -53,7 +53,7 @@ section article img{
 }
 ```
 
-Clase para elminar la flotabilidad, es necesario despues de utilizar elmentos con float.
+Clase para elminar la flotabilidad, es necesario después de utilizar elementos con float.
 
 ```css
 .borrar{

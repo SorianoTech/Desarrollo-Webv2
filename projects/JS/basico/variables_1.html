@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script> 
+            function suma(){
+                var var1 = document.getElementById('var1').value;
+                var var2 = document.getElementById('var2').value;
+                var resultado = document.getElementById("resultado"); //variable resultado para el elemento con id resultado
+                var total = var1 / ( var2**2 / 10000 );
+                if (total <= 18.5){
+                    alert("Estas delgado tio");
+                }else if (total >18.5 && total < 24.9){
+                    alert("Estas PERFECTO sigue así");
+                }else if(total >24.9){
+                    alert("Gordo corre!")
+                }
+                var texto = "El resultado de tu IMC es "  + total; //concateno las variables 
+                resultado.innerHTML = texto; //añado el texto a lugar donde esta el div resultado
+            }    
+            
+            function cambiarColor() {
+                var elem = document.getElementById('resultado');
+                var color = document.getElementById('color').value;
+                console.log(color);
+                elem.style.color = color;
+            }
+
+        
+        </script> 
+    </head>
+    <body>
+        <input type="number" id="var1" placeholder="Peso">
+        <input type="number" id="var2" placeholder="Altura">
+        <p>Introduce el color del texto</p>
+        <input type="text" id="color" placeholder="color">
+        
+        <button onclick="suma();">Calcular</button>
+        <button onclick="cambiarColor();">Color</button>
+        <div id="resultado">Resultado aquí</div>
+
+
+        
+        
+    </body>
+    
+   
+</html>

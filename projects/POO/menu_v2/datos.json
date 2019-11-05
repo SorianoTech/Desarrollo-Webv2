@@ -1,0 +1,41 @@
+{
+  "menu": [{
+      "id": "1",
+      "categoria": "Inicio",
+      "url": "inicio.php"
+    },
+    {
+      "id": "2",
+      "categoria": "Contacto",
+      "url": "contacto.php"
+    },
+    {
+      "id": "3",
+      "categoria": "Otros",
+      "url": "otros.php"
+    },
+    {
+      "id": "4",
+      "categoria": "Tienda",
+      "url": "tienda.php",
+      "subcategoria": [{
+        "categoria": "Ropa",
+        "id": 5,
+        "url": "ropa.php",
+        "subcategoria": [{
+          "categoria": "Hombre",
+          "id": 6,
+          "url": "ropa.php"
+        }, {
+          "categoria": "Mujer",
+          "id": 7,
+          "url": "mujer.php"
+        }]
+      }, {
+        "categoria": "Zapatos",
+        "id": 8,
+        "url": "zapatos.php"
+      }]
+    }
+  ]
+}

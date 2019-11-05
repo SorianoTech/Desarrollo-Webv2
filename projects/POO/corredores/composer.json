@@ -1,0 +1,13 @@
+{
+  "require": {
+    "phpclasses/easy-table-generator": ">=0.1"
+  },
+  "repositories": [{
+      "type": "composer",
+      "url": "https:\/\/www.phpclasses.org\/"
+    },
+    {
+      "packagist": false
+    }
+  ]
+}

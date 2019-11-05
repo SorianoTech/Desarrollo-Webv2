@@ -1,0 +1,12 @@
+#alta_vehiculos{
+    display: none;
+}
+
+.input_100{
+    border: solid 1px #888;
+    border-radius: 5px,0px,5px,0px;
+    width: 100%;
+}
+.invisible{
+    display: none;
+}

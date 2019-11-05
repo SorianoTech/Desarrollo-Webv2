@@ -1,0 +1,21 @@
+{  "links": [
+    {
+      "name": "Inicio",
+      "id": 1,
+      "link": "index.php"
+    },
+    {
+      "name": "Contacto",
+      "id": 2,
+      "link": "contacto.php"
+    },
+    {
+      "name": "Legal",
+      "id": 3,
+      "link": "legal.php"    },
+    {
+      "name": "Blog",
+      "id": 4,
+      "link": "blog.php"    }    
+    ]
+}

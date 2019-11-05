@@ -4,6 +4,7 @@
     <head>
         <?php
         include_once './datos.php';
+        include_once 'includes/prohibir.php';
         $date = date('Y-m-d');
         ?>
         <meta charset="utf-8">
@@ -59,6 +60,11 @@
                 max-width: 50%;
                 text-align: center*/
             }
+
+            .link_cerrar{
+                
+                margin:auto;
+            }
         </style>
         <script>
             function borrarAlerta(alerta) {
@@ -103,20 +109,24 @@
     <body id="page-top">
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
             <a class="navbar-brand mr-1" href="index.php">Gestión de proyectos</a>
+            
             <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
                 <i class="fas fa-bars"></i>
             </button>
-           
+           <span class="badge badge-secondary"><? echo $_COOKIE['empresa'] ?></span>
+           <a href="includes/cerrar_session.php" class="badge badge-light">Cerrar</a>
 
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"
                   action="guardar_proyecto.php" method="post">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Añadir dominio" name="proyecto">
+                    <input type="hidden" class="form-control" name="id_empresa" value="<? echo $id; ?>">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit">
                             <i class="fas fa-upload"></i>
                         </button>
+                        
                     </div>
                 </div>
             </form>
@@ -130,7 +140,7 @@
             <ul class="sidebar navbar-nav toggled" id="myMenu">
                 <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Buscar..." title="Escribe un dominio">
                 <?php
-                $query = "SELECT * FROM proyectos_proyecto";
+                $query = "SELECT proyectos_proyecto.id, proyectos_proyecto.proyecto  FROM proyectos_proyecto, proyectos_empresa WHERE proyectos_proyecto.id_empresa = proyectos_empresa.id and proyectos_empresa.clave = '" . $clave . "'";
                 $resultado = $mysqli->query($query);
                 while ($fila = $resultado->fetch_assoc()) {
                     ?>
@@ -165,7 +175,7 @@
                     }else{
                     echo "<h1>Alertas Globales</h1>";
                     //Query para sacar el número de todas las alertas
-                    $query_result_alertas="SELECT COUNT(proyectos_alertas.id) as total FROM proyectos_alertas, proyectos_proyecto WHERE proyectos_alertas.id_proyecto=proyectos_proyecto.id";
+                    $query_result_alertas="SELECT COUNT(proyectos_alertas.id) as total FROM proyectos_alertas,proyectos_proyecto, proyectos_empresa WHERE proyectos_proyecto.id=proyectos_alertas.id_proyecto and proyectos_proyecto.id_empresa = proyectos_empresa.id  and proyectos_empresa.id = '$id' ";
                     $resul_alertas = $mysqli->query($query_result_alertas);
                     $resul_alertas = $resul_alertas->fetch_assoc();
 
@@ -198,19 +208,19 @@
                     <div class="collapse show" id="collapseExample">
                         <div class="card card-body">Alertas
                             <? 
-                            $query_global_alertas= "SELECT proyectos_alertas.id as id, proyectos_proyecto.proyecto as proyecto, proyectos_alertas.alerta as alerta, DATE_FORMAT(proyectos_alertas.fecha,'%d %b %Y') as fecha FROM proyectos_alertas,proyectos_proyecto WHERE proyectos_proyecto.id=proyectos_alertas.id_proyecto ORDER BY proyectos_alertas.fecha ASC";
+                            $query_global_alertas= "SELECT proyectos_alertas.id as id, proyectos_proyecto.proyecto as proyecto, proyectos_alertas.alerta as alerta, DATE_FORMAT(proyectos_alertas.fecha,'%d-%b-%Y') as fecha FROM proyectos_alertas,proyectos_proyecto, proyectos_empresa WHERE proyectos_proyecto.id=proyectos_alertas.id_proyecto and proyectos_proyecto.id_empresa = proyectos_empresa.id  and proyectos_empresa.id = '".$id."' ORDER BY proyectos_alertas.fecha ASC";
                             $resultado_global_alerta = $mysqli->query($query_global_alertas);
                             if($resultado_global_alerta->num_rows >=1){
 
 
                             while($fila_global_alerta = $resultado_global_alerta->fetch_assoc()){
-                            echo "<div class='card card-body flex-row'>";
-                            //quitar el flex-row
+                            echo "<div class='card card-body'>";
+                            //quitar el flex-row o ñadir para que el icono sea flexible
                             
                             //echo '<a href=""><span class="badge badge-danger" id="cerrar'.$fila_global_alerta['id'].'" onclick="borrarAlerta('.$fila_global_alerta['id'].')">Borrar</span></a>';
                             
-                            echo '<a href=""><i class="far fa-times-circle fa-2x cerrar" id="cerrar'.$fila_global_alerta['id'].'" onclick="borrarAlerta('.$fila_global_alerta['id'].')"></i></a>';
-                            echo $fila_global_alerta['fecha']."<br>";
+                            echo '<a href="" class="link_cerrar"><i class="far fa-times-circle fa-2x cerrar" id="cerrar'.$fila_global_alerta['id'].'" onclick="borrarAlerta('.$fila_global_alerta['id'].')"></i></a>';
+                            echo $fila_global_alerta['fecha']."-";
                             echo $fila_global_alerta['proyecto']."<br>";
                             echo $fila_global_alerta['alerta'];
 
@@ -227,23 +237,24 @@
                     </div>
                     <?}else{//estoy en el dominio
                     ?>
+                    <!--//COLAPSE ALERTAS-->
                     <div class="collapse" id="collapseExample">
                         <div class="card card-body">
                             <? 
                             //query para sacar las alertas del dominio
-                            $query_alerta="SELECT proyectos_alertas.id as id, proyectos_proyecto.proyecto as proyecto, proyectos_alertas.alerta as alerta, DATE_FORMAT(proyectos_alertas.fecha,'%d-%b-%Y') as fecha FROM proyectos_alertas, proyectos_proyecto WHERE proyectos_proyecto.id =
-                            proyectos_alertas.id_proyecto
-                            and proyectos_proyecto.proyecto = '".$_GET['dominio']."' ORDER BY proyectos_alertas.fecha ASC";
+                            $query_alerta="SELECT proyectos_alertas.id as id, proyectos_proyecto.proyecto as proyecto, proyectos_alertas.alerta as alerta, DATE_FORMAT(proyectos_alertas.fecha,'%d-%b-%Y') as fecha FROM proyectos_alertas, proyectos_proyecto, proyectos_empresa WHERE proyectos_proyecto.id = proyectos_alertas.id_proyecto and proyectos_empresa.id=proyectos_alertas.id_empresa AND proyectos_proyecto.proyecto = '" . $_GET['dominio'] . "' and proyectos_alertas.id_empresa = '".$id."' and proyectos_empresa.clave = '".$clave."' ORDER BY proyectos_alertas.fecha ASC";
                             $resultado_alerta = $mysqli->query($query_alerta);
                             if($resultado_alerta->num_rows >=1){
                             echo "Alertas";
                             while($fila_alerta = $resultado_alerta->fetch_assoc()){
-                            echo "<div class='card card-body flex-row'>";
+                            echo "<div class='card card-body'>";
 
-                            echo '<a href=""><i class="far fa-times-circle fa-2x cerrar" id="cerrar'.$fila_alerta['id'].'"
+                            echo '<a href="" class="link_cerrar"><i class="far fa-times-circle fa-2x cerrar" id="cerrar'.$fila_alerta['id'].'"
                             onclick="borrarAlerta('.$fila_alerta['id'].')"></i></a>';
-                            echo $fila_alerta['fecha']."-";
+                            ?><span>
+                            <?echo $fila_alerta['fecha']."-";
                             echo $fila_alerta['alerta'];
+                            ?></span><?
                             echo "</div>";
                             }
                             }else{
@@ -260,8 +271,8 @@
                         <div class="card card-body">
                             <? 
                             //query para sacar los log de un dominio 
-                            $query_log="SELECT * FROM proyectos_log, proyectos_proyecto WHERE proyectos_proyecto.id = proyectos_log.id_proyecto
-                            and proyectos_proyecto.proyecto = '".$_GET['dominio']."' ORDER BY proyectos_log.fecha DESC ";
+                            $query_log="SELECT proyectos_log.id, proyectos_log.log, proyectos_empresa.id, proyectos_proyecto.id, DATE_FORMAT(proyectos_log.fecha,'%d-%b-%Y') as fecha FROM proyectos_log, proyectos_proyecto, proyectos_empresa WHERE proyectos_proyecto.id = proyectos_log.id_proyecto and proyectos_empresa.id=proyectos_log.id_empresa AND proyectos_proyecto.proyecto = '" . $_GET['dominio'] . "' and proyectos_log.id_empresa = '".$id."' and proyectos_empresa.clave = '".$clave."' ORDER BY proyectos_log.fecha DESC";
+                            
                             $resultado_log = $mysqli->query($query_log);
                             if($resultado_log->num_rows >=1){
                             echo "Log's";
@@ -298,8 +309,9 @@
                             se podria hacer dos formularos con un boton cada uno y un campo hiden-->
                         <form method="POST" action="guardar_log.php">
                             <h3>Añadir registro</h3>
-
+                            <input type="hidden" name="id_empresa" value="<? echo $id; ?>">
                             <input type="hidden" value="<? echo $_GET['dominio']; ?>" name="dominio">
+                        
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required="" name="texto"
                                       placeholder="Para añadir un log no es necesario seleccionar una fecha. Por defecto será la de hoy."></textarea>
                             <input type="date" class="rounded btn btn-lg btn-block" name="fecha" id="fecha" min="<?echo $date;?>">

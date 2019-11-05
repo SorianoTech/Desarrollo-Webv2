@@ -1,0 +1,52 @@
+/**
+ * TABLE STYLE
+ */
+table#tableID {
+    margin: auto;
+    background-color: #EEEEEE;
+    border-collapse: collapse;
+    border: solid black 2px;
+    width: 400px;
+}
+
+table#tableID td {
+    padding: 5px;
+}
+
+table#tableID .zebraOn{
+    background-color: #DDDDDD;
+}
+
+table#tableID .zebraOff{
+    background-color: #CCCCCC;
+}
+
+/**
+ * TABLE HEADER STYLE
+ */
+table#tableID .headClass {
+    text-align: center;
+    background-color: #999999;
+    border: solid black 2px;
+    font: bold 12px verdana;
+}
+
+/**
+ * TABLE BODY STYLE
+ */
+table#tableID .bodyClass {
+    font: normal 12px verdana;
+}
+
+table#tableID .bodyClass tr:hover {
+    background-color: #DDFFAA;
+}
+
+/**
+ * TABLE FOOTER STYLE
+ */
+table#tableID .footClass {
+    text-align: center;
+    background-color: #999999;
+    border: solid black 2px;
+}

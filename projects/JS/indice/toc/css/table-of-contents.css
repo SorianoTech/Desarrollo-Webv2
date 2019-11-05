@@ -1,0 +1,40 @@
+.tc h2 {
+  border-bottom: 1px solid #bbb;
+  color: #555;
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  -webkit-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.tc a {
+  color: #333; }
+
+.tc h3, .tc h4, .tc h5, .tc h6 {
+  font-size: 13px;
+  margin: 0; }
+  .tc h3 a, .tc h4 a, .tc h5 a, .tc h6 a {
+    color: #555; }
+
+.tc h3 {
+  margin-left: 0.5rem; }
+  .tc h3:before {
+    content: ' - '; }
+
+.tc h4 {
+  margin-left: 1rem; }
+  .tc h4:before {
+    content: ' - '; }
+
+.tc h5 {
+  margin-left: 1.5rem; }
+  .tc h5:before {
+    content: ' - '; }
+
+.tc h6 {
+  margin-left: 2rem; }
+  .tc h6:before {
+    content: ' - '; }

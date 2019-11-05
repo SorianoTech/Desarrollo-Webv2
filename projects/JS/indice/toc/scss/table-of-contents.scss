@@ -1,0 +1,45 @@
+// Table Content Styles
+.tc {
+
+  h2 {
+    border-bottom: 1px solid #bbb;
+    color: #555;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    transition: .5s all;
+  }
+
+  // Links
+  a {
+    color: #333;
+  }
+
+  // Sub-items
+  h3,h4,h5,h6 {
+    font-size: 13px;
+    margin: 0;
+
+    a {
+      color: #555;
+    }
+  }
+
+  // Heading margins
+  
+  $m-l: 0.5rem;
+  
+  @for $i from 3 through 6 {
+    h#{$i} {
+      margin-left: #{$m-l};
+      
+      &:before {
+        content: ' - ';
+      }
+    }
+    $m-l: $m-l + 0.5rem;
+    
+  }
+}

@@ -72,6 +72,7 @@ Conceptos estudiados:
 
 - [PureCSS](https://purecss.io/)
 - [Inter Fuentes](https://rsms.me/inter/samples/)
+- [Normalize CSS](https://necolas.github.io/normalize.css/)
 
 ### 1.2.3. Herramientas CSS
 
@@ -84,7 +85,21 @@ Conceptos estudiados:
 
 Lenguaje orientado a eventos, podemos provocar cambios en el DOM utilizando diferentes eventos que llamas por ejemplo a funciones.
 
-Petición AJAX utilizando JQuery para envio de datos por post
+- Petición AJAX utilizando JQuery para envío de datos por post.
+- En javascript accedemos a los objetos, los métodos: `documento.write(variable);`
+- Las variables son globales cuando no la definimos con var. `url = this.href`
+- [windows.location](https://developer.mozilla.org/es/docs/Web/API/Window/location)
+- prevent.Default() - Previene que se ejecute el evento por defecto. 
+
+Por ejemplo: 
+
+```javascript
+documento.write(variable);
+//Escapo la cadena de texto (") para poder concatenarla.
+document.write("\"" +  variable + "\"");
+```
+
+- [Guía de estudio](https://uniwebsidad.com/libros/javascript)
 
 ### 1.3.1. Librerías Javascript
 
@@ -93,9 +108,9 @@ Petición AJAX utilizando JQuery para envio de datos por post
 
 ### 1.3.2. Frameworks Javascript
 
-[Vue](https://vuejs.org/v)
-[React](https://es.reactjs.org/)
-[Angular](https://angular.io/docs)
+- [Vue](https://vuejs.org/v)
+- [React](https://es.reactjs.org/)
+- [Angular](https://angular.io/docs)
 
 ### 1.3.3. Enlaces JavaScript
 
@@ -103,6 +118,8 @@ Petición AJAX utilizando JQuery para envio de datos por post
 - [Browserft](http://browserify.org/)
 - [Node](https://nodejs.org/en/) - Servidor, equivaldría a PHP
 - [NPM - Gestor de paquetes](https://www.npmjs.com/)
+- [Alternativas a jQuery](http://youmightnotneedjquery.com)
+- [Vanila JS](http://vanilla-js.com/)
 
 ### 1.3.4. Editor de texto en Javascript
 
@@ -132,6 +149,10 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [La seguridad de la constraseñas.](https://www.php.net/manual/es/faq.passwords.php) Sin hashing, cualquier contraseña que se almacene en la base de datos de la aplicación podrá ser robada si la base de datos se ve comprometida.
 - [Programación orientada a objetos con PHP](https://www.php.net/manual/es/language.oop5.php)
 - [Serialización](https://www.php.net/manual/es/language.oop5.serialization.php) - Guardar datos en un fichero o base de datos de forma permanente basado en un objeto. Podemos recuperar el objeto para utilizar sin tener que consultar la base de datos.
+- Subida de [ficheros](https://www.php.net/manual/es/features.file-upload.post-method.php) mediante POST.
+- [Funciones de GD para tratar imagenes ](php.net/manual/es/ref.image.php)
+- [System command](https://www.php.net/manual/es/function.system.php), para ejecutar comandos del sistema en ficheros php
+- [Validar una imagen leyendo la cabezera mime/type ](https://www.php.net/manual/es/function.image-type-to-mime-type.php)
 
 ### 1.4.1. Programación orientada a objetos (POO)
 
@@ -219,7 +240,10 @@ Paneles de administración para administrar nuestro servidor linux mediante una 
 - [Herramienta papa comprobar registros DNS de correo](https://www.appmaildev.com/)
 - [Comprobar la velocidad de carga ](https://developers.google.com/speed/pagespeed/insights/)
 - [Google Console](https://search.google.com/search-console/) - Herramienta para comprobar el estado de la indexación de sus sitios en internet por el buscador y optimizar su visibilidad. 
-- [Verificar el envio de correo para que llegue a micrososft](https://sendersupport.olc.protection.outlook.com/snds/) 
+- [Verificar el envío de correo para que llegue a micrososft](https://sendersupport.olc.protection.outlook.com/snds/) 
+- [Herramientas para desarrolladores de Google](https://developers.google.com/web/tools/chrome-devtools/?hl=es)
+- [Automatizar pruebas de testing](https://www.seleniumhq.org/)
+- 
 
 
 ## 1.7. Wordpress
@@ -228,8 +252,9 @@ Paneles de administración para administrar nuestro servidor linux mediante una 
 - [Roles de usuario en wordpress](https://wordpress.org/support/article/roles-and-capabilities/)
 - [Awesome Plugin Wordpress](https://github.com/designwall/Awesome-WordPress-Plugins)
 - [Shortcodes](https://codex.wordpress.org/Shortcode_API) - codigo que me permite generar elementos
-- [Activar mode debug Wordpress] (https://decodecms.com/habilitar-el-modo-debug-en-wordpress/)
-- 
+- [Activar mode debug Wordpress](https://decodecms.com/habilitar-el-modo-debug-en-wordpress/)
+- Añadir un index.php vacio en la carpeta de plugins para impedir que se muestre el contenido.
+- [Añadir contenido a post con funciones (add_filter y 'the_content')](https://developer.wordpress.org/reference/hooks/the_content/)
 
 ### Plugin Wordpress
 
@@ -248,6 +273,7 @@ Paneles de administración para administrar nuestro servidor linux mediante una 
 
 ## 1.9. Framework para desarrollo de appmoviles
 
+- [Cordova](https://cordova.apache.org/)
 - [Onsen](https://onsen.io/)
 - [Quasar](https://quasar.dev/)
 - [Polyemer](https://pwa-starter-kit.polymer-project.org/)
@@ -289,4 +315,5 @@ https://www.codemotion.com/
 
 ## 1.17. Herramientas
 
-[Utilidad para crear Mockup](https://mockflow.com/)
+- [Utilidad para crear Mockup](https://mockflow.com/)
+- Herramienta para ~{geerar(https://jsfiddle.net/)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script> 
+            function suma(){
+                var var1 = document.getElementById('var1').value;
+                var var2 = document.getElementById('var2').value;
+                var resultado = document.getElementById("resultado");
+                alert(document.getElementById("resultado").innerHTML);
+                var total = parseInt(var1) + parseInt(var2);
+                var texto = "El resultado de sumar " + var1 + " + " + var2 + " = " + total;
+                resultado.innerHTML = texto;
+            }      
+        </script> 
+    </head>
+    <body onload="suma();">
+        <div>ESTO ES TEXTO <script>//document.write('<br><strong style="color: #006699">' + mivariable + '</strong>');</script></div>
+        
+        <div id="resultado">Hola</div>
+        
+        <input type="number" value="89" id="var1" placeholder="numero 1">
+        <input type="number" value="39" id="var2" placeholder="numero 2">
+        
+        <button onclick="suma();">SUMAR</button>
+        
+        <button onclick="this.innerHTML += Date();">Hoy es??? </button>
+
+
+
+        
+        
+    </body>
+    
+   
+</html>

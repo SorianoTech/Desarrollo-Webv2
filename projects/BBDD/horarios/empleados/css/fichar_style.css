@@ -1,0 +1,59 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #007fff;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.container {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin: 10%;
+  width: 80%;
+  height: 30%;
+  background-color: #dcdcdc;
+  border-radius: 500px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+#bienvenida {
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu {
+}
+
+#menu li a {
+  display: block;
+  width: 60px;
+}
+
+#tabla_contenido {
+  margin: auto;
+}
