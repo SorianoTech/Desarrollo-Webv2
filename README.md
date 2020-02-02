@@ -222,7 +222,8 @@ El lenguaje que nos permite crear contenido desde el lado de servidor para mostr
 - [Clouding.io](www.clouding.io)
 - [DigitalOcean](www.digitalocean.com)
 - [OVH](www.ovh.com)
-- [AWS] (www.aws.com)
+- [AWS](www.aws.com)
+- [Linode](https://www.linode.com/es/)
 
 ### 1.6.2. Sistemas y seguridad
 
