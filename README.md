@@ -44,7 +44,8 @@ Conceptos estudiados:
 
 ### 1.1.3. Framework HTML
 
-[Hugo - Generador de sitios estáticos](https://gohugo.io/)
+- [Hugo - Generador de sitios estáticos](https://gohugo.io/)
+- [Jenkyll - Generador de sitios estáticos](https://jekyllrb.com/)
 
 ---
 
