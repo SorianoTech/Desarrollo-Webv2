@@ -318,4 +318,4 @@ https://www.codemotion.com/
 ## 1.17. Herramientas
 
 - [Utilidad para crear Mockup](https://mockflow.com/)
-- Herramienta para ~{geerar(https://jsfiddle.net/)
+- [Herramienta para realizar test](https://jsfiddle.net/)
