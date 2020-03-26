@@ -1,6 +1,6 @@
 # Seguridad Web
 
-Esta pagina pretende recolectar la información necesaria para proteger nuestro servidor web.
+Esta pagina pretende recabar la información necesaria para proteger nuestro servidor web.
 
 
 ## Esconder la versión del servidor web (Apache)
@@ -34,3 +34,7 @@ Mas información [aquí](https://httpd.apache.org/docs/2.4/es/mod/core.html#serv
 
 ## Cambiar el puerto por defecto de SSH
 
+# Enlaces
+
+WAF(Web application Firewall)
+- https://sucuri.net/website-firewall/
